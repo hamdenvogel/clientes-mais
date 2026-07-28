@@ -1,4 +1,5 @@
 target/
+!target/clientes-api.jar
 .git
 .gitignore
 .gitattributes
