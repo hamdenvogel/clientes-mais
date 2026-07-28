@@ -43,6 +43,18 @@ npm install
 npm start
 ```
 
+## Lab Kubernetes (K3d)
+
+```powershell
+cd infra\k3d
+.\create-cluster.ps1
+.\create-secret.ps1
+.\deploy.ps1
+curl.exe http://localhost:8081/actuator/health
+```
+
+Guia: [`infra/k3d/README.md`](infra/k3d/README.md)
+
 ## CI / imagens
 
 - `.github/workflows/ci-api.yml` — build + testes + imagem

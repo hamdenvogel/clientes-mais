@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: clientes-mais
+resources:
+  - namespace.yaml
+  - configmap.yaml
+  - postgres.yaml
+  - api-deployment.yaml
+  - api-ingress.yaml
+# Secret: aplicar via create-secret.ps1 (não versionamos valores reais)
+# HPA opcional: kubectl apply -f api-hpa.yaml

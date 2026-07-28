@@ -1,0 +1,99 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clientes-api
+  namespace: clientes-mais
+  labels:
+    app: clientes-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: clientes-api
+  template:
+    metadata:
+      labels:
+        app: clientes-api
+    spec:
+      containers:
+        - name: api
+          # Lab local: imagem importada no k3d (clientes-api:local)
+          # Produção/OCI: ghcr.io/hamdenvogel/clientes-mais/clientes-api:latest
+          image: clientes-api:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: clientes-api-config
+            - secretRef:
+                name: clientes-api-secrets
+          env:
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: clientes-api-secrets
+                  key: SPRING_DATASOURCE_PASSWORD
+            - name: SPRING_RABBITMQ_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: clientes-api-secrets
+                  key: SPRING_RABBITMQ_PASSWORD
+            - name: SECURITY_JWT_SIGNING_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: clientes-api-secrets
+                  key: SECURITY_JWT_SIGNING_KEY
+            - name: SECURITY_JWT_CHAVE_ASSINATURA
+              valueFrom:
+                secretKeyRef:
+                  name: clientes-api-secrets
+                  key: SECURITY_JWT_CHAVE_ASSINATURA
+            - name: APP_REGISTRATION_TOKEN_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: clientes-api-secrets
+                  key: APP_REGISTRATION_TOKEN_SECRET
+          startupProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            failureThreshold: 30
+            periodSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 15
+            failureThreshold: 3
+          resources:
+            requests:
+              cpu: 100m
+              memory: 384Mi
+            limits:
+              cpu: "1"
+              memory: 768Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: clientes-api
+  namespace: clientes-mais
+  labels:
+    app: clientes-api
+spec:
+  selector:
+    app: clientes-api
+  ports:
+    - name: http
+      port: 80
+      targetPort: http

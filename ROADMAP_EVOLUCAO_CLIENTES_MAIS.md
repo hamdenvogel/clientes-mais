@@ -32,7 +32,7 @@ Ordem de execução acordada:
 | **1** | Docker multi-stage + Docker Compose (API + Postgres + RabbitMQ + Prometheus + Grafana) + métricas Actuator | ✅ concluída (local) |
 | **2** | Pedidos + RabbitMQ (`RabbitTemplate`, `@RabbitListener`, TopicExchange, fila durável, retry, DLQ + endpoint de falha) | ✅ concluída (local) |
 | **3** | GitHub Actions → publicação no GitHub Container Registry (imagem **amd64** e **arm64**) | ✅ concluída |
-| **4** | Primeiro lab Kubernetes: **K3d no Windows** (manifests, probes, limits; RabbitMQ via Helm) | ⏳ pendente |
+| **4** | Primeiro lab Kubernetes: **K3d no Windows** (manifests, probes, limits; RabbitMQ via Helm) | ✅ concluída |
 | **5** | **Hexagonal + DDD no projeto inteiro** (`clientes-api` — todos os bounded contexts; modular monolith) | ⏳ pendente |
 | **6** | Deploy público econômico: **Oracle Cloud Free Tier** + VM ARM + **K3s** + Helm + RabbitMQ + Spring Boot (scripts + README) — **já com a arquitetura do item 5** | ⏳ pendente |
 | **7** | **Front Angular LTS novo** = paridade total do legado + **signals** + **microfrontends** (ex.: cliente, prestador, …) + **SSR** (Nx + Storybook como base) | ⏳ pendente |
@@ -133,6 +133,15 @@ ghcr.io/hamdenvogel/clientes-mais/clientes-api:latest
 - Serve para validar o lab K8s **antes** da refatoração completa; o deploy “oficial” de currículo na nuvem fica no item 6 (e evolui no item 8)
 
 **Ambiente:** primeiro laboratório Kubernetes no Windows (K3d)
+
+**Como usar:** ver [`infra/k3d/README.md`](infra/k3d/README.md)
+
+**Artefatos**
+
+- `infra/k8s/` — namespace, configmap, postgres (+PVC), api deployment/service/ingress, HPA opcional, kustomization
+- `infra/k8s/secret.example.yaml` — modelo (sem valores reais)
+- `infra/k3d/create-cluster.ps1`, `create-secret.ps1`, `deploy.ps1`, `destroy-cluster.ps1`
+- `infra/k3d/values-rabbitmq.yaml` — Helm Bitnami RabbitMQ + persistence
 
 ---
 
@@ -261,7 +270,7 @@ Recomendações Always Free: budget alert baixo (ex. US$ 1–5); só shapes/recu
 
 ## Próximo passo imediato
 
-Item 3 (CI + GHCR) entregue no repo. Iniciar o **item 4**: K3d no Windows.
+Item 4 (K3d) entregue. Iniciar o **item 5**: Hexagonal + DDD no projeto inteiro.
 
 ---
 
@@ -284,3 +293,4 @@ Item 3 (CI + GHCR) entregue no repo. Iniciar o **item 4**: K3d no Windows.
 | 2026-07-28 | Status da lista alinhado ao estilo do roteiro CI/CD (`✅ concluída` / `⏳ pendente`) |
 | 2026-07-28 | **Item 3:** workflows CI + publish GHCR multi-arch (`amd64`/`arm64`) |
 | 2026-07-28 | Remoção de secrets do código versionado; `.gitignore`/README/CONTRIBUTING/SECURITY reforçados |
+| 2026-07-28 | **Item 4:** lab K3d (manifests, probes, limits, Helm RabbitMQ, scripts Windows) |

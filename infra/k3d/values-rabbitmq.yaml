@@ -1,0 +1,27 @@
+# Bitnami RabbitMQ — lab K3d (item 4)
+auth:
+  username: clientes
+  existingPasswordSecret: clientes-api-secrets
+  existingSecretPasswordKey: rabbitmq-password
+
+persistence:
+  enabled: true
+  size: 1Gi
+
+replicaCount: 1
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+metrics:
+  enabled: false
+
+# Service name esperado pela API: rabbitmq (Chart cria <release>-rabbitmq;
+# usamos release name "rabbitmq" → service rabbitmq)
+service:
+  type: ClusterIP
