@@ -1,0 +1,17 @@
+# Imagem de runtime (JAR já compilado no CI).
+# Usada pelo workflow publish-ghcr (amd64 + arm64 sem Maven sob QEMU).
+FROM eclipse-temurin:21-jre-alpine
+WORKDIR /app
+
+RUN apk add --no-cache curl && \
+	addgroup -g 1001 -S appgroup && \
+	adduser -u 1001 -S appuser -G appgroup
+
+COPY target/clientes-api.jar app.jar
+RUN chown appuser:appgroup app.jar
+
+USER appuser
+
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "app.jar"]

@@ -111,7 +111,8 @@ Comunicação típica: HTTP síncrono (REST) + **RabbitMQ** para eventos assínc
 **Artefatos**
 
 - `.github/workflows/ci-api.yml` — build + testes + `docker build` da `clientes-api`
-- `.github/workflows/publish-ghcr.yml` — Buildx QEMU → `ghcr.io/hamdenvogel/clientes-mais/clientes-api` (`latest`, `sha-*`, tags `v*`)
+- `.github/workflows/publish-ghcr.yml` — Maven no runner + `Dockerfile.runtime` via Buildx → `ghcr.io/hamdenvogel/clientes-mais/clientes-api` (`latest`, `sha-*`, tags `v*`) — **amd64/arm64** sem compilar Maven sob QEMU
+- `clientes-api/Dockerfile.runtime` — imagem enxuta a partir do JAR já gerado
 - `README.md` na raiz do monorepo
 
 **Imagem**

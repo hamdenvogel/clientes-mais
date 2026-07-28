@@ -16,7 +16,7 @@ concurrency:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}/clientes-api
+  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/clientes-mais/clientes-api
 
 permissions:
   contents: read
@@ -26,9 +26,27 @@ jobs:
   publish:
     name: Build & push amd64+arm64
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: clientes-api
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+          cache-dependency-path: clientes-api/pom.xml
+
+      - name: Build jar
+        run: |
+          chmod +x mvnw
+          ./mvnw -B -DskipTests package
+          test -f target/clientes-api.jar
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -47,7 +65,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.IMAGE_NAME }}
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=sha,prefix=sha-
@@ -58,9 +76,10 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./clientes-api
-          file: ./clientes-api/Dockerfile
+          file: ./clientes-api/Dockerfile.runtime
           platforms: linux/amd64,linux/arm64
           push: true
+          provenance: false
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
