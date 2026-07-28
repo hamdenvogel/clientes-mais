@@ -46,7 +46,7 @@ npm start
 ## CI / imagens
 
 - `.github/workflows/ci-api.yml` — build + testes + imagem
-- `.github/workflows/publish-ghcr.yml` — `ghcr.io/hamdenvogel/clientes-mais/clientes-api` (amd64 + arm64)
+- `.github/workflows/publish-ghcr.yml` — `ghcr.io/hamdenvogel/clientes-mais/clientes-api` (amd64 + arm64 via `Dockerfile.runtime`)
 
 ```bash
 docker pull ghcr.io/hamdenvogel/clientes-mais/clientes-api:latest
