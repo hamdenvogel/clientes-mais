@@ -1,0 +1,90 @@
+<div class="crud-page">
+  <div class="crud-header">
+    <div class="crud-header__identity">
+      <div class="crud-header__brand" aria-label="Clientes Mais+">
+        <img class="crud-header__logo" src="assets/logo-clientes-mais-icon.svg" alt="Logo Clientes Mais+" />
+        <span class="crud-header__brand-text">Clientes <strong>Mais+</strong></span>
+      </div>
+      <div class="crud-header__copy">
+        <h4>Gerenciamento de Pacotes</h4>
+        <h4 class="subheading">Modulo de administracao de pacotes do sistema.</h4>
+        <p class="text-muted">Consulte, pesquise e acesse rapidamente as operacoes de cadastro.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="crud-card">
+    <div class="crud-actions mb-3">
+      <button class="btn btn-warning" (click)="novoCadastro()">
+        <i class="fa fa-plus" aria-hidden="true"></i> Novo
+      </button>
+      <button type="button" class="btn btn-success" routerLink="/home">
+        <i class="fa fa-home" aria-hidden="true"></i> Voltar
+      </button>
+    </div>
+
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Pesquisar pacotes pela descricao"
+        placeholder="Pesquisar pela Descricao"
+        (keyup)="onKeyUp($event)"
+        (change)="onChange($event)"
+        [(ngModel)]="campoPesquisa" />
+      <div class="input-group-append">
+        <button class="btn btn-primary" (click)="pesquisarDescricao()" type="button">
+          Pesquisar
+        </button>
+      </div>
+    </div>
+
+    <div class="crud-table">
+      <div class="table-responsive">
+        <table id="tbl_pacotes" class="table table-hover table-striped" aria-label="Tabela de pacotes">
+          <thead>
+            <tr class="thead-dark">
+              <th id="id" scope="col" sortable="id" role="button" tabindex="0" [attr.aria-sort]="orderFields[0]?.current ? (orderFields[0]?.sortAsc ? 'ascending' : 'descending') : 'none'" aria-label="Ordenar por identificador" (click)="onSort('id')" (keydown.enter)="onSort('id')" (keydown.space)="onSort('id'); $event.preventDefault()">ID <img *ngIf="orderFields[0].current" [src]="orderFields[0].arrow" alt="" aria-hidden="true" /></th>
+              <th id="descricao" scope="col" sortable="descricao" role="button" tabindex="0" [attr.aria-sort]="orderFields[1]?.current ? (orderFields[1]?.sortAsc ? 'ascending' : 'descending') : 'none'" aria-label="Ordenar por descricao" (click)="onSort('descricao')" (keydown.enter)="onSort('descricao')" (keydown.space)="onSort('descricao'); $event.preventDefault()">Descricao <img *ngIf="orderFields[1].current" [src]="orderFields[1].arrow" alt="" aria-hidden="true" /></th>
+              <th id="status" scope="col" sortable="status" role="button" tabindex="0" [attr.aria-sort]="orderFields[2]?.current ? (orderFields[2]?.sortAsc ? 'ascending' : 'descending') : 'none'" aria-label="Ordenar por status" (click)="onSort('status')" (keydown.enter)="onSort('status')" (keydown.space)="onSort('status'); $event.preventDefault()">Status <img *ngIf="orderFields[2].current" [src]="orderFields[2].arrow" alt="" aria-hidden="true" /></th>
+              <th scope="col" class="crud-table__actions-header">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of collectionCustomPagination.data | paginate: configCustomPagination">
+              <td><em class="text-item-grid">{{ item.id }}</em></td>
+              <td>
+                {{ item.descricao }}<br>
+                <span class="text-twitter">Justificativa:</span>
+                <em class="text-facebook">{{ item.justificativa }}</em>
+              </td>
+              <td>{{ statusDetalhado[item.status] }}</td>
+              <td class="crud-table__actions">
+                <button class="btn btn-primary btn-sm crud-table__action" routerLink="/pacote/form/{{ item.id }}" title="Editar pacote">
+                  <i class="fa fa-edit" aria-hidden="true"></i>
+                  Editar
+                </button>
+                <button class="btn btn-danger btn-sm crud-table__action" (click)="openModal(template, item.id)" title="Excluir pacote">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                  Excluir
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <pagination-controls id="customPaginate" [maxSize]="maxSize" (pageChange)="onPageChange($event)"
+        [previousLabel]="labels.previousLabel" [nextLabel]="labels.nextLabel">
+      </pagination-controls>
+    </div>
+  </div>
+
+  <ng-template #template>
+    <div class="modal-body text-center">
+      <p>Confirma a exclusao?</p>
+      <button type="button" class="btn btn-default" (click)="confirm()">Sim</button>
+      <button type="button" class="btn btn-primary" (click)="decline()">Nao</button>
+    </div>
+  </ng-template>
+</div>

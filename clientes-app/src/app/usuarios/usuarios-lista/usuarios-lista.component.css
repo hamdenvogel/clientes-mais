@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.crud-page {
+  min-height: calc(100vh - 96px);
+  overflow-y: hidden;
+}
+
+.crud-card {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.table td,
+.table th {
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+  vertical-align: middle;
+}
+
+.role-pill {
+  margin-right: 6px;
+  margin-bottom: 4px;
+}

@@ -1,0 +1,145 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: linear-gradient(140deg, #0f172a, #1e3a8a);
+}
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header com Logo e Branding */
+.register-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px 24px;
+  background: linear-gradient(140deg, #0f172a, #1d4ed8, #0ea5e9);
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.24);
+}
+
+.register-header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(147, 197, 253, 0.35);
+  background: linear-gradient(135deg, rgba(8, 18, 38, 0.45), rgba(15, 32, 87, 0.32));
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.22), 0 4px 12px rgba(15, 23, 42, 0.28);
+  width: fit-content;
+}
+
+.register-header__logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.register-header__brand-text {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.register-header__brand-text strong {
+  color: #93c5fd;
+  font-weight: 950;
+}
+
+.register-header__copy h1 {
+  margin: 0 0 6px;
+  font-size: clamp(1.32rem, 3vw, 1.68rem);
+  font-weight: 850;
+  letter-spacing: -0.02em;
+  color: #fff;
+  background: linear-gradient(90deg, #ffffff 0%, #e0f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.register-header__subtitle {
+  margin: 0;
+  font-size: clamp(0.92rem, 2vw, 1.02rem);
+  font-weight: 400;
+  color: rgba(224, 242, 254, 0.88);
+  line-height: 1.5;
+}
+
+/* Card de Formulário */
+.register-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 24px 54px rgba(15, 23, 42, 0.18);
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.4);
+}
+
+.register-card__body {
+  padding: 28px 26px;
+}
+
+.register-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.register-actions .btn {
+  flex: 1;
+  min-width: 140px;
+  min-height: 40px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.register-actions .btn:focus,
+.register-actions .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.14);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .register-container {
+    max-width: 100%;
+  }
+
+  .register-header {
+    padding: 20px 18px;
+    gap: 14px;
+  }
+
+  .register-card__body {
+    padding: 20px 18px;
+  }
+
+  .register-actions {
+    flex-direction: column;
+  }
+
+  .register-actions .btn {
+    width: 100%;
+  }
+}
+

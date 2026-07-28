@@ -1,0 +1,8 @@
+<st-button [button]="button" [state]="state" (command)="openInputWindow()"></st-button>
+<div *ngIf="showInputWindow" #window class="st-input-window" role="dialog" aria-modal="false" [attr.aria-label]="button?.label || 'Entrada do editor'" (keyup.escape)="closeInputWindow()" [style.margin-left.px]="margin" [style.opacity]="opacity">
+  <label *ngIf="button?.label" class="st-input-label">{{button?.label}}</label>
+  <div>
+    <input #input class="st-input-input" type="text" [title]="button?.label" [attr.aria-label]="button?.label || 'Campo do editor'" [(ngModel)]="value">
+    <button type="button" class="st-input-button" [attr.aria-label]="'Confirmar ' + (button?.label || 'entrada')" (click)="onCommand()">Confirm</button>
+  </div>
+</div>

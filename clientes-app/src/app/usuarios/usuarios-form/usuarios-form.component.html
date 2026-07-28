@@ -1,0 +1,147 @@
+<div class="crud-page crud-form crud-page--raised crud-page--compact crud-page--fit-screen crud-page--ultra-compact">
+  <div class="crud-header">
+    <div class="crud-header__identity">
+      <div class="crud-header__brand" aria-label="Clientes Mais+">
+        <img class="crud-header__logo" src="assets/logo-clientes-mais-icon.svg" alt="Logo Clientes Mais+" />
+        <span class="crud-header__brand-text">Clientes <strong>Mais+</strong></span>
+      </div>
+      <div class="crud-header__copy">
+        <h4>Gerenciamento de Usuarios</h4>
+        <h4 class="subheading">Cadastro e administracao de acessos.</h4>
+        <p class="text-muted">Defina login, e-mail, senha e perfis de permissao.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="crud-card">
+    <form (ngSubmit)="onSubmit()" aria-label="Formulario de cadastro de usuario" novalidate>
+      <app-alert-message-form [listAlerts]="listAlerts"></app-alert-message-form>
+
+      <div class="row" *ngIf="usuario.id">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>ID:</label>
+            <input type="text" [ngModel]="usuario.id" name="id" class="form-control" disabled="true" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="usuarioLogin">Login: *</label>
+            <input id="usuarioLogin" type="text" class="form-control" maxlength="100" [(ngModel)]="usuario.username" name="username" required aria-required="true" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="usuarioEmail">Email:</label>
+            <input id="usuarioEmail" type="email" class="form-control" maxlength="150" [(ngModel)]="usuario.email" name="email" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="usuarioCpf">CPF: *</label>
+            <input id="usuarioCpf" type="text" class="form-control" maxlength="14" [(ngModel)]="usuario.cpf" (ngModelChange)="onCpfChange($event)" name="cpf" required aria-required="true" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="usuarioTelefone">Telefone:</label>
+            <input id="usuarioTelefone" type="text" class="form-control" maxlength="15" [(ngModel)]="usuario.telefone" (ngModelChange)="onTelefoneChange($event)" name="telefone" />
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-end">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" [(ngModel)]="usuario.ativo" name="ativo" id="ativo" />
+            <label class="form-check-label" for="ativo">Usuario ativo</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="usuarioEndereco">Endereco:</label>
+            <input id="usuarioEndereco" type="text" class="form-control" maxlength="250" [(ngModel)]="usuario.endereco" name="endereco" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5">
+          <div class="form-group">
+            <label for="usuarioCidade">Cidade:</label>
+            <input id="usuarioCidade" type="text" class="form-control" maxlength="100" [(ngModel)]="usuario.cidade" name="cidade" />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="usuarioUf">UF:</label>
+            <input id="usuarioUf" type="text" class="form-control" maxlength="2" [(ngModel)]="usuario.uf" name="uf" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="usuarioCep">CEP:</label>
+            <input id="usuarioCep" type="text" class="form-control" maxlength="9" [(ngModel)]="usuario.cep" (ngModelChange)="onCepChange($event)" name="cep" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-group">
+            <label for="usuarioSenha">Senha <span *ngIf="!id">*</span>:</label>
+            <input type="password" class="form-control" maxlength="120" [(ngModel)]="usuario.password" name="password"
+              id="usuarioSenha" [required]="!id" [attr.aria-required]="!id" placeholder="No modo edicao, deixe em branco para manter a senha atual" />
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-end">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" [(ngModel)]="usuario.emailConfirmed" name="emailConfirmed" id="emailConfirmed" />
+            <label class="form-check-label" for="emailConfirmed">Email confirmado</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <label id="usuarioPerfisLabel">Perfis:</label>
+          <div class="roles-grid" role="group" aria-labelledby="usuarioPerfisLabel">
+            <label class="role-item" *ngFor="let role of perfisDisponiveis">
+              <input
+                type="checkbox"
+                [checked]="isRoleSelected(role)"
+                (change)="onRoleToggle(role, $any($event.target).checked)" />
+              <span>{{ role }}</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 crud-actions">
+          <button type="submit" class="btn btn-success" *ngIf="id == undefined">
+            <i class="fa fa-save"></i> Salvar
+          </button>
+
+          <button type="submit" class="btn btn-primary" *ngIf="usuario.id">
+            <i class="fa fa-sync-alt"></i> Atualizar
+          </button>
+
+          <button type="button" class="btn btn-warning ml-1" (click)="limpar()">
+            <i class="fa fa-eraser"></i> Limpar
+          </button>
+
+          <button type="button" class="btn btn-danger ml-1" (click)="voltarParaListagem()">
+            <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<div id="layoutSidenav_nav">
+    <nav class="sb-sidenav accordion sb-sidenav-dark app-sidebar" id="sidenavAccordion" role="navigation" aria-label="Menu principal">
+        <div class="sb-sidenav-menu">
+            <div class="nav">
+                <div class="app-sidebar__intro">
+                    <span class="app-sidebar__intro-icon">
+                        <i class="fas fa-th-large" aria-hidden="true"></i>
+                    </span>
+                    <div>
+                        <strong>Menu Principal</strong>
+                    </div>
+                    <span class="app-sidebar__intro-badge">v2.0</span>
+                </div>
+
+                <div class="sb-sidenav-menu-heading">Sistema</div>
+                <a class="nav-link" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                    <div class="sb-nav-link-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    Home
+                </a>
+                <div class="sb-sidenav-menu-heading">Cadastros</div>
+                <a class="nav-link collapsed" routerLink="/clientes" routerLinkActive="active"
+                    data-toggle="collapse" data-target="#collapseLayouts"
+                    aria-expanded="false" aria-controls="collapseLayouts"
+                    ><div class="sb-nav-link-icon"><i class="fas fa-columns" aria-hidden="true"></i></div>
+                    Clientes
+                </a>
+
+                <a class="nav-link collapsed" routerLink="/prestador" routerLinkActive="active"
+                    data-toggle="collapse" data-target="#collapseLayouts"
+                    aria-expanded="false" aria-controls="collapseLayouts"
+                    ><div class="sb-nav-link-icon"><i class="fas fa-user-ninja" aria-hidden="true"></i></div>
+                    Prestadores
+                </a>
+
+                <a class="nav-link collapsed" routerLink="/servicos-prestados" routerLinkActive="active"
+                    data-toggle="collapse" data-target="#collapseLayouts"
+                    aria-expanded="false" aria-controls="collapseLayouts"
+                    ><div class="sb-nav-link-icon"><i class="fas fa-address-card" aria-hidden="true"></i></div>
+                    Serviços Prestados
+                </a>
+
+                <a class="nav-link collapsed" routerLink="/usuarios" routerLinkActive="active"
+                    data-toggle="collapse" data-target="#collapseLayouts"
+                    aria-expanded="false" aria-controls="collapseLayouts"
+                    ><div class="sb-nav-link-icon"><i class="fas fa-user-cog" aria-hidden="true"></i></div>
+                    Usuários
+                </a>
+
+                <a class="nav-link collapsed app-sidebar__hidden-item" routerLink="/pacote" routerLinkActive="active"
+                    data-toggle="collapse" data-target="#collapseLayouts"
+                    aria-expanded="false" aria-controls="collapseLayouts"
+                    ><div class="sb-nav-link-icon"> <i class="fas fa-cubes" aria-hidden="true"></i></div>
+                    Pacotes de Serviços
+                </a>
+
+                <a class="nav-link collapsed app-sidebar__hidden-item" routerLink="/produto" routerLinkActive="active"
+                    data-toggle="collapse" data-target="#collapseLayouts"
+                    aria-expanded="false" aria-controls="collapseLayouts"
+                    ><div class="sb-nav-link-icon"> <i class="fas fa-tasks" aria-hidden="true"></i></div>
+                    Produtos
+                </a>
+
+                <div class="sb-sidenav-menu-heading">Logout</div>
+                <button type="button" class="nav-link collapsed app-sidebar__logout" (click)="logout();"
+                    aria-label="Encerrar sessao"
+                    ><div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt" aria-hidden="true"></i></div>
+                    Sair
+                </button>
+            </div>
+        </div>
+        <div class="sb-sidenav-footer app-sidebar__footer">
+            <div class="small">Usuário Logado:</div>
+            <strong>{{ usuarioLogado }}</strong>
+        </div>
+    </nav>
+</div>

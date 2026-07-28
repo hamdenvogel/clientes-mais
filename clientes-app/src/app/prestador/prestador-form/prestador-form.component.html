@@ -1,0 +1,188 @@
+<div class="crud-page crud-form crud-page--raised crud-page--compact crud-page--fit-screen crud-page--prestador-form">
+<div class="crud-header">
+  <div class="crud-header__identity">
+    <div class="crud-header__brand" aria-label="Clientes Mais+">
+      <img class="crud-header__logo" src="assets/logo-clientes-mais-icon.svg" alt="Logo Clientes Mais+" />
+      <span class="crud-header__brand-text">Clientes <strong>Mais+</strong></span>
+    </div>
+    <div class="crud-header__copy">
+      <h4>Gerenciamento de Prestadores</h4>
+      <h4 class="subheading">Modulo de administracao de prestadores do sistema.</h4>
+      <p class="text-muted">Consulte, pesquise e acesse rapidamente as operacoes de cadastro.</p>
+    </div>
+  </div>
+</div>
+
+<div class="crud-card">
+  <form (ngSubmit)="onSubmit()" aria-label="Formulario de cadastro de prestador" novalidate>
+    <app-alert-message-form [listAlerts]="listAlerts"></app-alert-message-form>
+
+    <div class="row">
+      <div class="col-md-12">
+      <div class="crud-badge">
+        Prestador e o executor do servico.
+      </div>
+    </div>
+  </div>
+        <div class="row crud-form-top-grid">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-md-8">
+                <div class="form-group">
+                          <label for="prestadorNome">Nome: *</label>
+                    <input type="text" class="form-control" maxlength="150"
+                            id="prestadorNome" [(ngModel)]="prestador.nome" name="nome" required aria-required="true" />
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                <div class="form-group">
+                        <label for="prestadorCpf">CPF: *</label>
+                    <input type="text" class="form-control" maxlength="14"
+                          id="prestadorCpf" [(ngModel)]="prestador.cpf" (ngModelChange)="onCpfChange($event)" name="cpf" required aria-required="true" />
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="crud-photo-panel">
+                <div class="form-group crud-photo-preview">
+                  <label>Foto</label>
+                  <img class="crud-photo crud-photo--clickable"
+                       [src]="foto || fotoNotFound"
+                       alt="Foto do prestador"
+                       role="button"
+                       tabindex="0"
+                       title="Clique para escolher arquivo"
+                       (click)="inputFile.click()"
+                       (keydown.enter)="inputFile.click()"
+                       (keydown.space)="inputFile.click(); $event.preventDefault()" />
+                </div>
+
+                <div class="crud-photo-tools crud-photo-tools--side">
+                  <input type="file" name="file" id="prestadorFotoFile" #inputFile class="form-control-file crud-file-input" (change)="selectFile($event)" />
+                  <label class="btn btn-primary crud-file-button" for="prestadorFotoFile">
+                    <i class="fas fa-upload"></i>
+                    Escolher arquivo
+                  </label>
+                  <small class="crud-file-name">{{ getSelectedFileName() }}</small>
+
+                  <div class="form-group" *ngIf="prestador.id && filename">
+                    <button type="button" class="btn btn-danger ml-1" (click)="deletarImagem()">
+                      <i class="fas fa-trash"></i>
+                      Apagar Imagem
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                      <label for="prestadorPix">PIX:</label>
+                  <input type="text" class="form-control" maxlength="50"
+                        id="prestadorPix" [(ngModel)]="prestador.pix" name="pix" />
+              </div>
+          </div>
+
+          <!--
+          <div class="col-md-6">
+            <rating [(ngModel)]="prestador.avaliacao" name="avaliacao" [readonly]="isReadonly"
+            (keyup)="confirmSelection($event)"></rating>
+          <div class="card">
+            <pre class="card-block card-header" style="margin:15px 0;">Avalia&ccedil;&atilde;o: Modo Leitura: <i>{{isReadonly}} }}</i>;</pre>
+          </div>
+          <button class="btn btn-primary" (click)="resetStars($event)">Zerar Avali&ccedil;&atilde;o</button>
+         </div>
+        -->
+
+        <div class="col-md-6">
+          <label for="prestadorAvaliacao">Avaliação: *</label>
+            <rating [max]="5" [(ngModel)]="prestador.avaliacao" name="avaliacao" [readonly]="isReadonly"
+                      (keyup)="confirmSelection($event)" [customTemplate]="tt" aria-label="Avaliacao do prestador" id="prestadorAvaliacao"></rating>
+             <div class="card">
+                 <pre class="card-block card-header" style="margin:15px 0;">1-Péssimo 2-Ruim 3-Razoável 4-Bom 5-Excelente</pre>
+             </div>
+
+
+            <ng-template #tt let-i="index" let-v="value">
+              <button type="button" class="btn btn-{{i < v ? 'warning' : 'default'}}" [attr.aria-label]="'Selecionar nota ' + (i + 1)" (click)="confirmClickRating($event)">
+                {{i < v ? '&#9733;' : '&#9734;'}}
+              </button>
+            </ng-template>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label id="profissaoLabel">Profissão: *</label>
+                <div>
+                  <ng-multiselect-dropdown class="multiselect-dropdown"
+                  name="multiselect_profissao"
+                  aria-labelledby="profissaoLabel"
+                  [placeholder]="'Selecione a Profissão'"
+                  [settings]="dropdownSettings"
+                  [data]="profissao"
+                  [(ngModel)]="profissaoSelecionada"
+                  (onSelect)="onItemSelect($event)"
+                  (onDeSelect)="onItemDeSelect($event)"
+                  (onSelectAll)="onSelectAll($event)"
+                  (onFilterChange)="onFilterChange($event)">
+                </ng-multiselect-dropdown>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+          <div class="form-group">
+              <label for="prestadorEmail">Email:</label>
+              <input type="text" class="form-control" maxlength="200"
+                           id="prestadorEmail" [(ngModel)]="prestador.email" name="email" />
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <re-captcha (resolved)="resolved($event)"
+              siteKey="6LfWbsEbAAAAAHULqvnjRg_V5oInPHdy6jeyP8ZR">
+          </re-captcha>
+      </div>
+    </div>
+  </div>
+
+        <div class="row">
+            <div class="col-md-12 crud-actions">
+                <button type="submit" class="btn btn-success" *ngIf="id == undefined">
+                    <i class="fa fa-save" ></i> Salvar
+                </button>
+
+                <button type="submit" class="btn btn-primary" *ngIf="prestador.id">
+                    <i class="fa fa-sync-alt" ></i> Atualizar
+                </button>
+
+                <button type="button"
+                        class="btn btn-warning ml-1"
+                        (click)="apagar()">
+                    <i class="fa fa-eraser"></i> Limpar
+                </button>
+
+                <button type="button" class="btn btn-danger ml-1" (click)="voltarParaListagem()">
+                    <i class="fa fa-arrow-alt-circle-left" ></i> Voltar
+                </button>
+            </div>
+
+        </div>
+    </form>
+</div>
+</div>
+
+
+

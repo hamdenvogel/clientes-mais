@@ -1,0 +1,2496 @@
+{
+    "total": 67,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 67
+    },
+    "effortTotal": 201,
+    "issues": [
+        {
+            "key": "AZrw-qzYLF6QLR8gY1vx",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/config/InternacionalizacaoConfigTest.java",
+            "project": "clientes",
+            "line": 11,
+            "hash": "a972aef5436072e5b8f9b57bfc781145",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-06T00:04:59+0000",
+            "updateDate": "2025-12-06T00:04:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrw-qzFLF6QLR8gY1vv",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/config/WebConfigTest.java",
+            "project": "clientes",
+            "line": 10,
+            "hash": "b753e622009bec4261b92e910df0fc16",
+            "textRange": {
+                "startLine": 10,
+                "endLine": 10,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-06T00:04:59+0000",
+            "updateDate": "2025-12-06T00:04:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrw-qzPLF6QLR8gY1vw",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/config/WebSecurityConfigTest.java",
+            "project": "clientes",
+            "line": 22,
+            "hash": "7512c7f69e62b4eef5e7a9ba03506176",
+            "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-06T00:04:59+0000",
+            "updateDate": "2025-12-06T00:04:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrw-qz_LF6QLR8gY1v0",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/util/MyHttpServletRequestWrapperTest.java",
+            "project": "clientes",
+            "line": 12,
+            "hash": "1d9e56b9ccdea5aa8171f715d836d7ff",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-06T00:04:59+0000",
+            "updateDate": "2025-12-06T00:04:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrw-qz0LF6QLR8gY1vz",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/util/ObjectMapperUtilTest.java",
+            "project": "clientes",
+            "line": 14,
+            "hash": "53594c65d853f321599b7b7aaa98cf54",
+            "textRange": {
+                "startLine": 14,
+                "endLine": 14,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-06T00:04:59+0000",
+            "updateDate": "2025-12-06T00:04:59+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrw9EjCLF6QLR8gYyuH",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/filter/JwtAuthFilterTest.java",
+            "project": "clientes",
+            "line": 19,
+            "hash": "ba4a7abef047b647e4519a575bf21261",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-05T23:58:01+0000",
+            "updateDate": "2025-12-05T23:58:01+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrw9Ei6LF6QLR8gYyuG",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/filter/TransactionFilterTest.java",
+            "project": "clientes",
+            "line": 17,
+            "hash": "c405821eee21c30dbb00d6d2b23490f6",
+            "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-05T23:58:01+0000",
+            "updateDate": "2025-12-05T23:58:01+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrw9EhpLF6QLR8gYyuC",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/CepControllerTest.java",
+            "project": "clientes",
+            "line": 25,
+            "hash": "93276f412c0b3ad1e968b00bf437ce99",
+            "textRange": {
+                "startLine": 25,
+                "endLine": 25,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-05T23:58:01+0000",
+            "updateDate": "2025-12-05T23:58:01+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrwsrc9LF6QLR8gYvwR",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/DocControllerTest.java",
+            "project": "clientes",
+            "line": 22,
+            "hash": "c08e392b46420d6cf6ae0c3bf3027aee",
+            "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-05T22:46:22+0000",
+            "updateDate": "2025-12-05T22:46:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrwsrdwLF6QLR8gYvwT",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/GoogleControllerTest.java",
+            "project": "clientes",
+            "line": 26,
+            "hash": "1918a650c73363193d83afb50fcaef28",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-05T22:46:22+0000",
+            "updateDate": "2025-12-05T22:46:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrwsrdlLF6QLR8gYvwS",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/NaturezaControllerTest.java",
+            "project": "clientes",
+            "line": 27,
+            "hash": "ef4caeb6c60243dce14ef785964a7a37",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-05T22:46:22+0000",
+            "updateDate": "2025-12-05T22:46:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrwsrcQLF6QLR8gYvwQ",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/ParametroControllerTest.java",
+            "project": "clientes",
+            "line": 27,
+            "hash": "d60f0e4b0b59d7b65b87248bbe9ef013",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-05T22:46:22+0000",
+            "updateDate": "2025-12-05T22:46:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjRPJu5P4Fz08DDC",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/AtividadeControllerTest.java",
+            "project": "clientes",
+            "line": 28,
+            "hash": "0181c50caedc2b7a1e1c86f534b7b68c",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjRiJu5P4Fz08DDD",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/AuthControllerTest.java",
+            "project": "clientes",
+            "line": 37,
+            "hash": "268dac37074633542600471d1abf646c",
+            "textRange": {
+                "startLine": 37,
+                "endLine": 37,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjSBJu5P4Fz08DDF",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/ChamadoControllerTest.java",
+            "project": "clientes",
+            "line": 37,
+            "hash": "aa90a7871b8baff8c1d36fa60c736e2e",
+            "textRange": {
+                "startLine": 37,
+                "endLine": 37,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjTuJu5P4Fz08DDL",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/DiagnosticoControllerTest.java",
+            "project": "clientes",
+            "line": 36,
+            "hash": "f0adf40844d39411ef0f4f04f4ff4ea9",
+            "textRange": {
+                "startLine": 36,
+                "endLine": 36,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjSwJu5P4Fz08DDH",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/EquipamentoControllerTest.java",
+            "project": "clientes",
+            "line": 32,
+            "hash": "77c1619e6137f959c8cb285e6e840805",
+            "textRange": {
+                "startLine": 32,
+                "endLine": 32,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjTmJu5P4Fz08DDK",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/GraficoControllerTest.java",
+            "project": "clientes",
+            "line": 26,
+            "hash": "57635619f1981a8600460efff264e0b7",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjTWJu5P4Fz08DDJ",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/ImagemControllerTest.java",
+            "project": "clientes",
+            "line": 32,
+            "hash": "02a8141f039269deaf0477a9c035f9ed",
+            "textRange": {
+                "startLine": 32,
+                "endLine": 32,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjQhJu5P4Fz08DDA",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/ItemPacoteControllerTest.java",
+            "project": "clientes",
+            "line": 35,
+            "hash": "1af9ba3ca373e3dbbb005f28956e6c8c",
+            "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjTCJu5P4Fz08DDI",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/PedidoControllerTest.java",
+            "project": "clientes",
+            "line": 41,
+            "hash": "cca5a7f408329e03f9f4b20f5100876f",
+            "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjPjJu5P4Fz08DC-",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/PrestadorControllerTest.java",
+            "project": "clientes",
+            "line": 45,
+            "hash": "2bdc635f1808ed715d9fb65ae88e0f28",
+            "textRange": {
+                "startLine": 45,
+                "endLine": 45,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjRwJu5P4Fz08DDE",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/ProdutoControllerTest.java",
+            "project": "clientes",
+            "line": 33,
+            "hash": "effe8b401a6a870cf4f526ba9228d100",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjQ6Ju5P4Fz08DDB",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/ProfissaoControllerTest.java",
+            "project": "clientes",
+            "line": 29,
+            "hash": "12341422f7c9365cbacf6d3e1171f35b",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrphjQAJu5P4Fz08DC_",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/SolucaoControllerTest.java",
+            "project": "clientes",
+            "line": 36,
+            "hash": "9a0a81b3fb3cb208f34d56cb5b7778c5",
+            "textRange": {
+                "startLine": 36,
+                "endLine": 36,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-04T13:20:34+0000",
+            "updateDate": "2025-12-04T13:20:34+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrgp4nhnkBgGbm__qRP",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/ClienteControllerTest.java",
+            "project": "clientes",
+            "line": 33,
+            "hash": "2bec383507282d2a40d88dbd1358bb30",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-02T19:59:48+0000",
+            "updateDate": "2025-12-02T19:59:48+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrgp4munkBgGbm__qRO",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/ServicoPrestadoControllerTest.java",
+            "project": "clientes",
+            "line": 52,
+            "hash": "5458a45dad1d25d03f65f1cdc26063f0",
+            "textRange": {
+                "startLine": 52,
+                "endLine": 52,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-02T19:59:48+0000",
+            "updateDate": "2025-12-02T19:59:48+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrgp4lTnkBgGbm__qRN",
+            "rule": "java:S5786",
+            "severity": "INFO",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/UsuarioControllerTest.java",
+            "project": "clientes",
+            "line": 25,
+            "hash": "efd63eee92239126ca3748b5bb7ac2c8",
+            "textRange": {
+                "startLine": 25,
+                "endLine": 25,
+                "startOffset": 0,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this 'public' modifier.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-02T19:59:48+0000",
+            "updateDate": "2025-12-02T19:59:48+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nKuJkff21CxP2tQ",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+            "project": "clientes",
+            "line": 80,
+            "hash": "24cc82eb2f5ca251fb8c333fa822a022",
+            "textRange": {
+                "startLine": 80,
+                "endLine": 80,
+                "startOffset": 17,
+                "endOffset": 28
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nKuJkff21CxP2tR",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+            "project": "clientes",
+            "line": 85,
+            "hash": "a5b3f3183abe75a0fca81336c25d4879",
+            "textRange": {
+                "startLine": 85,
+                "endLine": 85,
+                "startOffset": 17,
+                "endOffset": 35
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nKnJkff21CxP2tD",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java",
+            "project": "clientes",
+            "line": 60,
+            "hash": "c6846dad755f39b66024594988aa02c8",
+            "textRange": {
+                "startLine": 60,
+                "endLine": 60,
+                "startOffset": 17,
+                "endOffset": 39
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nKdJkff21CxP2s4",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+            "project": "clientes",
+            "line": 92,
+            "hash": "46271798b4d7f22d0ae22ef579fda927",
+            "textRange": {
+                "startLine": 92,
+                "endLine": 92,
+                "startOffset": 17,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nKdJkff21CxP2s5",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+            "project": "clientes",
+            "line": 97,
+            "hash": "f0bb690a8b546d4ac684d5abcf642c23",
+            "textRange": {
+                "startLine": 97,
+                "endLine": 97,
+                "startOffset": 17,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nKdJkff21CxP2s6",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+            "project": "clientes",
+            "line": 102,
+            "hash": "34c9f2053a93a24234599d9c7e827118",
+            "textRange": {
+                "startLine": 102,
+                "endLine": 102,
+                "startOffset": 17,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nKdJkff21CxP2s7",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+            "project": "clientes",
+            "line": 107,
+            "hash": "c7ed3c6c8cbbcdcb52363da179698651",
+            "textRange": {
+                "startLine": 107,
+                "endLine": 107,
+                "startOffset": 17,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nKdJkff21CxP2s8",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+            "project": "clientes",
+            "line": 112,
+            "hash": "1bff8d85265791466bef1fc45fae6967",
+            "textRange": {
+                "startLine": 112,
+                "endLine": 112,
+                "startOffset": 17,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nKUJkff21CxP2sZ",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java",
+            "project": "clientes",
+            "line": 69,
+            "hash": "24cc82eb2f5ca251fb8c333fa822a022",
+            "textRange": {
+                "startLine": 69,
+                "endLine": 69,
+                "startOffset": 17,
+                "endOffset": 28
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nItJkff21CxP2rp",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ItemPacoteRepository.java",
+            "project": "clientes",
+            "line": 35,
+            "hash": "8c1532eafc08f5d27cba58dda851512c",
+            "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 83,
+                "endOffset": 92
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nItJkff21CxP2rq",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ItemPacoteRepository.java",
+            "project": "clientes",
+            "line": 36,
+            "hash": "0ea9d43077102b081931d4f7f6200a03",
+            "textRange": {
+                "startLine": 36,
+                "endLine": 36,
+                "startOffset": 41,
+                "endOffset": 60
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nJUJkff21CxP2rs",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ServicoPrestadoRepository.java",
+            "project": "clientes",
+            "line": 54,
+            "hash": "0a129f4b41bd78ea132488186413a9f0",
+            "textRange": {
+                "startLine": 54,
+                "endLine": 54,
+                "startOffset": 53,
+                "endOffset": 63
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nJUJkff21CxP2ru",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ServicoPrestadoRepository.java",
+            "project": "clientes",
+            "line": 125,
+            "hash": "63d841a65d6f5d689bd3bbd3dc0d4c43",
+            "textRange": {
+                "startLine": 125,
+                "endLine": 125,
+                "startOffset": 14,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nJVJkff21CxP2r5",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ServicoPrestadoRepository.java",
+            "project": "clientes",
+            "line": 138,
+            "hash": "3690bd93ce9e23c0732301b28b1c8dd5",
+            "textRange": {
+                "startLine": 138,
+                "endLine": 138,
+                "startOffset": 15,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nFsJkff21CxP2qN",
+            "rule": "java:S1612",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ApplicationControllerAdvice.java",
+            "project": "clientes",
+            "line": 25,
+            "hash": "c59c16833a117176c0af27d7ca27676d",
+            "textRange": {
+                "startLine": 25,
+                "endLine": 25,
+                "startOffset": 21,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this lambda with method reference 'MessageSourceResolvable::getDefaultMessage'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "java8"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nFsJkff21CxP2qL",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ApplicationControllerAdvice.java",
+            "project": "clientes",
+            "line": 36,
+            "hash": "9429eaf4e00a88cb5619325f6f5e6204",
+            "textRange": {
+                "startLine": 36,
+                "endLine": 36,
+                "startOffset": 27,
+                "endOffset": 38
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "",
+            "tags": [
+                "clumsy"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nFVJkff21CxP2p5",
+            "rule": "java:S1612",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ClienteController.java",
+            "project": "clientes",
+            "line": 72,
+            "hash": "67981b67ecb0a4d5fba3ceed8998d946",
+            "textRange": {
+                "startLine": 72,
+                "endLine": 72,
+                "startOffset": 11,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this lambda with method reference 'Cliente::getNome'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "java8"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nGwJkff21CxP2q1",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/DiagnosticoController.java",
+            "project": "clientes",
+            "line": 87,
+            "hash": "504982febd8c8be4a671f153e9ea74d5",
+            "textRange": {
+                "startLine": 87,
+                "endLine": 87,
+                "startOffset": 13,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nEHJkff21CxP2oz",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/EquipamentoController.java",
+            "project": "clientes",
+            "line": 71,
+            "hash": "504982febd8c8be4a671f153e9ea74d5",
+            "textRange": {
+                "startLine": 71,
+                "endLine": 71,
+                "startOffset": 13,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nF_Jkff21CxP2qa",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+            "project": "clientes",
+            "line": 33,
+            "hash": "566f857242de6cd0591fd3fd1c21af36",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 15,
+                "endOffset": 24
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nF_Jkff21CxP2qc",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+            "project": "clientes",
+            "line": 49,
+            "hash": "5beb160006af0017b939f03a43765fa1",
+            "textRange": {
+                "startLine": 49,
+                "endLine": 49,
+                "startOffset": 15,
+                "endOffset": 32
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nGAJkff21CxP2qi",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+            "project": "clientes",
+            "line": 79,
+            "hash": "10fa1ad47535e0658336f4d2658ace1a",
+            "textRange": {
+                "startLine": 79,
+                "endLine": 79,
+                "startOffset": 15,
+                "endOffset": 24
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nE2Jkff21CxP2pf",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ItemPacoteController.java",
+            "project": "clientes",
+            "line": 187,
+            "hash": "504982febd8c8be4a671f153e9ea74d5",
+            "textRange": {
+                "startLine": 187,
+                "endLine": 187,
+                "startOffset": 13,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nEkJkff21CxP2pX",
+            "rule": "java:S1612",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/PedidoController.java",
+            "project": "clientes",
+            "line": 54,
+            "hash": "14176bcbf0ad18c861df83f74ce01220",
+            "textRange": {
+                "startLine": 54,
+                "endLine": 54,
+                "startOffset": 23,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this lambda with method reference 'this::converter'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "java8"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nFhJkff21CxP2qB",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/PrestadorController.java",
+            "project": "clientes",
+            "line": 205,
+            "hash": "504982febd8c8be4a671f153e9ea74d5",
+            "textRange": {
+                "startLine": 205,
+                "endLine": 205,
+                "startOffset": 13,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nEdJkff21CxP2pP",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ProdutoController.java",
+            "project": "clientes",
+            "line": 157,
+            "hash": "504982febd8c8be4a671f153e9ea74d5",
+            "textRange": {
+                "startLine": 157,
+                "endLine": 157,
+                "startOffset": 13,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nEdJkff21CxP2pQ",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ProdutoController.java",
+            "project": "clientes",
+            "line": 198,
+            "hash": "504982febd8c8be4a671f153e9ea74d5",
+            "textRange": {
+                "startLine": 198,
+                "endLine": 198,
+                "startOffset": 13,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nESJkff21CxP2o8",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ServicoPrestadoController.java",
+            "project": "clientes",
+            "line": 419,
+            "hash": "504982febd8c8be4a671f153e9ea74d5",
+            "textRange": {
+                "startLine": 419,
+                "endLine": 419,
+                "startOffset": 13,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nGSJkff21CxP2qu",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/SolucaoController.java",
+            "project": "clientes",
+            "line": 87,
+            "hash": "504982febd8c8be4a671f153e9ea74d5",
+            "textRange": {
+                "startLine": 87,
+                "endLine": 87,
+                "startOffset": 13,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nD1Jkff21CxP2ow",
+            "rule": "java:S2786",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/GoogleRecaptchaDTO.java",
+            "project": "clientes",
+            "line": 51,
+            "hash": "9f25e5bd7672de9c01a8c4434fdfdf43",
+            "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 1,
+                "endOffset": 7
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/GoogleRecaptchaDTO.java",
+                            "textRange": {
+                                "startLine": 51,
+                                "endLine": 51,
+                                "startOffset": 8,
+                                "endOffset": 12
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Remove this redundant \"static\" qualifier; nested enum types are implicitly static.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "clumsy"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1m-_Jkff21CxP2nf",
+            "rule": "java:S1905",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/service/JwtService.java",
+            "project": "clientes",
+            "line": 86,
+            "hash": "f9b6a682a1a3594e69fac8352b80598e",
+            "textRange": {
+                "startLine": 86,
+                "endLine": 86,
+                "startOffset": 15,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unnecessary cast to \"String\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "clumsy",
+                "redundant"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1m_uJkff21CxP2n0",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/service/ServicoPrestadoService.java",
+            "project": "clientes",
+            "line": 40,
+            "hash": "63d841a65d6f5d689bd3bbd3dc0d4c43",
+            "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 14,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1m_uJkff21CxP2n1",
+            "rule": "java:S100",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/service/ServicoPrestadoService.java",
+            "project": "clientes",
+            "line": 41,
+            "hash": "3690bd93ce9e23c0732301b28b1c8dd5",
+            "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 15,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1m9yJkff21CxP2nQ",
+            "rule": "java:S117",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/service/impl/CepServiceImpl.java",
+            "project": "clientes",
+            "line": 55,
+            "hash": "cf454e8beae464dba2ef90756722ae43",
+            "textRange": {
+                "startLine": 55,
+                "endLine": 55,
+                "startOffset": 9,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1m7kJkff21CxP2mo",
+            "rule": "java:S1643",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/service/impl/ValidadorServiceImpl.java",
+            "project": "clientes",
+            "line": 77,
+            "hash": "098e9a52185590b357ba24e287195330",
+            "textRange": {
+                "startLine": 77,
+                "endLine": 77,
+                "startOffset": 3,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use a StringBuilder instead.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "performance"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1m7kJkff21CxP2mp",
+            "rule": "java:S5411",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/service/impl/ValidadorServiceImpl.java",
+            "project": "clientes",
+            "line": 108,
+            "hash": "c5077c9c98d898b00e75d8ac3a1623ae",
+            "textRange": {
+                "startLine": 108,
+                "endLine": 108,
+                "startOffset": 7,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use a primitive boolean expression here.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nK-Jkff21CxP2tV",
+            "rule": "java:S2386",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/util/DateUtils.java",
+            "project": "clientes",
+            "line": 19,
+            "hash": "8302f19c832c9bcfa882cb1faf006285",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 26,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Make this member \"protected\".",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "",
+            "tags": [
+                "cert",
+                "cwe",
+                "unpredictable"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nK2Jkff21CxP2tS",
+            "rule": "java:S1264",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/util/HttpServletReqUtil.java",
+            "project": "clientes",
+            "line": 41,
+            "hash": "816d28b89d2c7eae4d775b94174e5d81",
+            "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 2,
+                "endOffset": 5
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this \"for\" loop with a \"while\" loop.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "clumsy"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZrZ1nK2Jkff21CxP2tT",
+            "rule": "java:S4719",
+            "severity": "MINOR",
+            "component": "clientes:src/main/java/io/github/hvogel/clientes/util/HttpServletReqUtil.java",
+            "project": "clientes",
+            "line": 56,
+            "hash": "c075f259ad83b26ca6f52f05b9f657d6",
+            "textRange": {
+                "startLine": 56,
+                "endLine": 56,
+                "startOffset": 58,
+                "endOffset": 65
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace charset name argument with StandardCharsets.UTF_8",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "",
+            "tags": [
+                "clumsy",
+                "java7"
+            ],
+            "creationDate": "2025-12-01T12:14:22+0000",
+            "updateDate": "2025-12-01T12:14:22+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        }
+    ],
+    "components": [
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/NaturezaControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "NaturezaControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/NaturezaControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/NaturezaControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/GoogleControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "GoogleControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/GoogleControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/GoogleControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/ParametroControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "ParametroControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/ParametroControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/ParametroControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/DocControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "DocControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/DocControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/DocControllerTest.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "GraficoAtendimentoLinear.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+            "path": "src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "GraficoStatusPacotePercentual.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+            "path": "src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "GraficoAtendimentoTorta.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java",
+            "path": "src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "GraficoTipoServico.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java",
+            "path": "src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/service/JwtService.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "JwtService.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/service/JwtService.java",
+            "path": "src/main/java/io/github/hvogel/clientes/service/JwtService.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/util/DateUtils.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "DateUtils.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/util/DateUtils.java",
+            "path": "src/main/java/io/github/hvogel/clientes/util/DateUtils.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/util/HttpServletReqUtil.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "HttpServletReqUtil.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/util/HttpServletReqUtil.java",
+            "path": "src/main/java/io/github/hvogel/clientes/util/HttpServletReqUtil.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/DiagnosticoController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "DiagnosticoController.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/DiagnosticoController.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/DiagnosticoController.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/service/impl/CepServiceImpl.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "CepServiceImpl.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/service/impl/CepServiceImpl.java",
+            "path": "src/main/java/io/github/hvogel/clientes/service/impl/CepServiceImpl.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/SolucaoController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "SolucaoController.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/SolucaoController.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/SolucaoController.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/CepControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "CepControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/CepControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/CepControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/GraficoControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "GraficoControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/GraficoControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/GraficoControllerTest.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ServicoPrestadoRepository.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ServicoPrestadoRepository.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/model/repository/ServicoPrestadoRepository.java",
+            "path": "src/main/java/io/github/hvogel/clientes/model/repository/ServicoPrestadoRepository.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/DiagnosticoControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "DiagnosticoControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/DiagnosticoControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/DiagnosticoControllerTest.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/PedidoController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "PedidoController.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/PedidoController.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/PedidoController.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/ProdutoController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ProdutoController.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/ProdutoController.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/ProdutoController.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/ServicoPrestadoController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ServicoPrestadoController.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/ServicoPrestadoController.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/ServicoPrestadoController.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/EquipamentoController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "EquipamentoController.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/EquipamentoController.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/EquipamentoController.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/GoogleRecaptchaDTO.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "GoogleRecaptchaDTO.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/dto/GoogleRecaptchaDTO.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/dto/GoogleRecaptchaDTO.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/config/InternacionalizacaoConfigTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "InternacionalizacaoConfigTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/config/InternacionalizacaoConfigTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/config/InternacionalizacaoConfigTest.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "GraficoController.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/GraficoController.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/util/ObjectMapperUtilTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "ObjectMapperUtilTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/util/ObjectMapperUtilTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/util/ObjectMapperUtilTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/util/MyHttpServletRequestWrapperTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "MyHttpServletRequestWrapperTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/util/MyHttpServletRequestWrapperTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/util/MyHttpServletRequestWrapperTest.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/PrestadorController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "PrestadorController.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/PrestadorController.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/PrestadorController.java"
+        },
+        {
+            "key": "clientes",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "sistemaclientes",
+            "longName": "sistemaclientes"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/service/impl/ValidadorServiceImpl.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ValidadorServiceImpl.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/service/impl/ValidadorServiceImpl.java",
+            "path": "src/main/java/io/github/hvogel/clientes/service/impl/ValidadorServiceImpl.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/ClienteController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ClienteController.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/ClienteController.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/ClienteController.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/ApplicationControllerAdvice.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ApplicationControllerAdvice.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/ApplicationControllerAdvice.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/ApplicationControllerAdvice.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/rest/ItemPacoteController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ItemPacoteController.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/rest/ItemPacoteController.java",
+            "path": "src/main/java/io/github/hvogel/clientes/rest/ItemPacoteController.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/config/WebConfigTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "WebConfigTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/config/WebConfigTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/config/WebConfigTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/config/WebSecurityConfigTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "WebSecurityConfigTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/config/WebSecurityConfigTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/config/WebSecurityConfigTest.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/service/ServicoPrestadoService.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ServicoPrestadoService.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/service/ServicoPrestadoService.java",
+            "path": "src/main/java/io/github/hvogel/clientes/service/ServicoPrestadoService.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/ImagemControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "ImagemControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/ImagemControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/ImagemControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/ChamadoControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "ChamadoControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/ChamadoControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/ChamadoControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/EquipamentoControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "EquipamentoControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/EquipamentoControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/EquipamentoControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/filter/TransactionFilterTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "TransactionFilterTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/filter/TransactionFilterTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/filter/TransactionFilterTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/ProdutoControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "ProdutoControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/ProdutoControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/ProdutoControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/PedidoControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "PedidoControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/PedidoControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/PedidoControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/filter/JwtAuthFilterTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "JwtAuthFilterTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/filter/JwtAuthFilterTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/filter/JwtAuthFilterTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/ProfissaoControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "ProfissaoControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/ProfissaoControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/ProfissaoControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/AuthControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "AuthControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/AuthControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/AuthControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/AtividadeControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "AtividadeControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/AtividadeControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/AtividadeControllerTest.java"
+        },
+        {
+            "key": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ItemPacoteRepository.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ItemPacoteRepository.java",
+            "longName": "src/main/java/io/github/hvogel/clientes/model/repository/ItemPacoteRepository.java",
+            "path": "src/main/java/io/github/hvogel/clientes/model/repository/ItemPacoteRepository.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/UsuarioControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "UsuarioControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/UsuarioControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/UsuarioControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/ServicoPrestadoControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "ServicoPrestadoControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/ServicoPrestadoControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/ServicoPrestadoControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/PrestadorControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "PrestadorControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/PrestadorControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/PrestadorControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/SolucaoControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "SolucaoControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/SolucaoControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/SolucaoControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/ItemPacoteControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "ItemPacoteControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/ItemPacoteControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/ItemPacoteControllerTest.java"
+        },
+        {
+            "key": "clientes:src/test/java/io/github/hvogel/clientes/rest/ClienteControllerTest.java",
+            "enabled": true,
+            "qualifier": "UTS",
+            "name": "ClienteControllerTest.java",
+            "longName": "src/test/java/io/github/hvogel/clientes/rest/ClienteControllerTest.java",
+            "path": "src/test/java/io/github/hvogel/clientes/rest/ClienteControllerTest.java"
+        }
+    ],
+    "facets": []
+}

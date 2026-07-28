@@ -1,0 +1,67 @@
+<div class="confirm-page">
+  <div class="confirm-card">
+    <div class="confirm-header">
+      <h2>Confirmar cadastro</h2>
+      <p>Defina sua senha para ativar sua conta e acessar a plataforma.</p>
+    </div>
+
+    <div class="confirm-body">
+      <app-alert-message-form [listAlerts]="listAlerts"></app-alert-message-form>
+
+      <ng-container *ngIf="tokenValido; else tokenInvalido">
+        <div class="form-group">
+          <label for="novaSenha">Nova senha</label>
+          <input
+            id="novaSenha"
+            name="password"
+            [(ngModel)]="password"
+            (ngModelChange)="onPasswordChange()"
+            type="password"
+            class="form-control"
+            aria-describedby="passwordChecklist"
+            placeholder="Informe sua nova senha" />
+        </div>
+
+        <div id="passwordChecklist" class="password-checklist" role="status" aria-live="polite">
+          <div class="password-checklist__title">A senha deve conter:</div>
+          <ul>
+            <li [class.valid]="passwordRules.minLength">No mínimo 8 caracteres</li>
+            <li [class.valid]="passwordRules.upper">Pelo menos 1 letra maiúscula</li>
+            <li [class.valid]="passwordRules.lower">Pelo menos 1 letra minúscula</li>
+            <li [class.valid]="passwordRules.number">Pelo menos 1 número</li>
+            <li [class.valid]="passwordRules.special">Pelo menos 1 caractere especial</li>
+            <li [class.valid]="passwordRules.noWhitespace">Sem espaços em branco</li>
+          </ul>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmarSenha">Confirmar senha</label>
+          <input id="confirmarSenha" name="confirmPassword" [(ngModel)]="confirmPassword" type="password" class="form-control" placeholder="Repita a senha" />
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="concluirCadastro()" [disabled]="loading">
+          {{ loading ? 'Concluindo...' : 'Concluir cadastro' }}
+        </button>
+      </ng-container>
+
+      <ng-template #tokenInvalido>
+        <p class="text-muted">Seu link pode ter expirado. Informe seu e-mail para receber outro.</p>
+        <div class="form-group">
+          <label for="reenvioEmail">E-mail</label>
+          <input id="reenvioEmail" name="email" [(ngModel)]="email" type="email" class="form-control" placeholder="voce@empresa.com" />
+        </div>
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          (click)="reenviar()"
+          [disabled]="loadingReenvio || resendCooldownSeconds > 0">
+          {{ loadingReenvio ? 'Enviando...' : 'Reenviar link' }}
+        </button>
+        <p class="resend-info" *ngIf="resendCooldownSeconds > 0">
+          Você poderá reenviar novamente em {{ resendCooldownSeconds }}s.
+        </p>
+      </ng-template>
+    </div>
+  </div>
+</div>
+

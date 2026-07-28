@@ -1,0 +1,96 @@
+<div class="login-page">
+  <div class="login-shell">
+    <section class="login-brand-panel">
+      <div class="login-brand-panel__badge">Plataforma de gestão</div>
+      <div class="login-brand-panel__logo-wrap">
+        <img src="assets/logo-clientes-mais.svg" alt="Clientes Mais+" class="login-brand-panel__logo" />
+      </div>
+      <h1 class="login-brand-panel__title">Clientes Mais+</h1>
+      <p class="login-brand-panel__subtitle">
+        Controle clientes, prestadores, serviços e pacotes em uma experiência mais clara,
+        moderna e profissional.
+      </p>
+
+      <div class="login-brand-panel__highlights">
+        <div class="login-highlight">
+          <i class="fas fa-shield-alt"></i>
+          <span>Acesso seguro com autenticação</span>
+        </div>
+        <div class="login-highlight">
+          <i class="fas fa-chart-line"></i>
+          <span>Painel com visão rápida do negócio</span>
+        </div>
+        <div class="login-highlight">
+          <i class="fas fa-users"></i>
+          <span>Gestão centralizada e produtiva</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="login-form-panel">
+      <div class="login-card">
+        <div class="login-card__header">
+          <span class="login-card__eyebrow">Bem-vindo</span>
+          <h2>Entrar na sua conta</h2>
+          <p>Informe seu login e senha para acessar o painel principal.</p>
+        </div>
+
+        <div class="login-card__body">
+          <form (submit)="onSubmit();">
+            <app-alert-message-form [listAlerts]="listAlerts"></app-alert-message-form>
+
+            <div class="form-group login-field">
+              <label class="small mb-2" for="username">Login</label>
+              <div class="input-group login-input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user" aria-hidden="true"></i></span>
+                </div>
+                <input
+                  id="username"
+                  type="text"
+                  name="username"
+                  [(ngModel)]="username"
+                  autocomplete="off"
+                  class="form-control login-input"
+                  aria-required="true"
+                  placeholder="Digite seu login" />
+              </div>
+            </div>
+
+            <div class="form-group login-field">
+              <label class="small mb-2" for="password">Senha</label>
+              <div class="input-group login-input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-lock" aria-hidden="true"></i></span>
+                </div>
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  [(ngModel)]="password"
+                  class="form-control login-input"
+                  aria-required="true"
+                  placeholder="Digite sua senha" />
+              </div>
+            </div>
+
+            <div class="login-actions">
+              <button type="submit" class="btn login-btn login-btn--primary">
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                <span>Entrar</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="login-card__footer text-center">
+          <div class="small">
+            <button type="button" class="btn btn-link p-0 align-baseline" aria-label="Criar novo cadastro de usuario" (click)="preparaCadastrar($event)">
+              Nao possui usuario? Crie seu cadastro com confirmacao por e-mail.
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

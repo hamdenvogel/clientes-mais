@@ -1,0 +1,5 @@
+<div class="form-group" role="region" aria-label="Mensagens do sistema" aria-live="polite" aria-atomic="false">
+  <div *ngFor="let alert of listAlerts">
+    <alert role="alert" [attr.aria-live]="alert.type === 'danger' ? 'assertive' : 'polite'" [type]="alert.type" [dismissOnTimeout]="alert.timeout" [dismissible]="dismissible">{{ alert.msg }}</alert>
+  </div>
+</div>

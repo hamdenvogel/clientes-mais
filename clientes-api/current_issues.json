@@ -1,0 +1,760 @@
+{
+    "critical": [],
+    "major": [
+        {
+            "key": "AZs2foSxXW86VSHsGAXO",
+            "rule": "java:S5863",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/model/entity/EntitiesTest.java",
+            "project": "clientes",
+            "line": 172,
+            "hash": "623d5ce82e4a9bcde85db8981bbd78ca",
+            "textRange": {
+                "startLine": 172,
+                "endLine": 172,
+                "startOffset": 21,
+                "endOffset": 25
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/model/entity/EntitiesTest.java",
+                            "textRange": {
+                                "startLine": 172,
+                                "endLine": 172,
+                                "startOffset": 27,
+                                "endOffset": 31
+                            },
+                            "msg": "actual",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Replace this assertion to not have the same actual and expected expression.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "tests"
+            ],
+            "creationDate": "2025-12-19T12:02:53+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "BUG",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tuoqryy_UizGCNev",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+            "project": "clientes",
+            "line": 18,
+            "hash": "5d230af06e0c3fb83a3194260c974c8e",
+            "textRange": {
+                "startLine": 18,
+                "endLine": 18,
+                "startOffset": 8,
+                "endOffset": 18
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+                            "textRange": {
+                                "startLine": 18,
+                                "endLine": 18,
+                                "startOffset": 19,
+                                "endOffset": 40
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tuoqryy_UizGCNew",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+            "project": "clientes",
+            "line": 21,
+            "hash": "8d9c259db9c0be1ac09aacab3b639fb7",
+            "textRange": {
+                "startLine": 21,
+                "endLine": 21,
+                "startOffset": 8,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+                            "textRange": {
+                                "startLine": 21,
+                                "endLine": 21,
+                                "startOffset": 20,
+                                "endOffset": 39
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertNotEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertNotEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tuoqryy_UizGCNex",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+            "project": "clientes",
+            "line": 24,
+            "hash": "d0df0565db9b1981860b0dcd999fbef5",
+            "textRange": {
+                "startLine": 24,
+                "endLine": 24,
+                "startOffset": 8,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+                            "textRange": {
+                                "startLine": 24,
+                                "endLine": 24,
+                                "startOffset": 20,
+                                "endOffset": 50
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertNotEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertNotEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tuoqryy_UizGCNey",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+            "project": "clientes",
+            "line": 29,
+            "hash": "b139370af1361199873c80e2a50f69ca",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 8,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+                            "textRange": {
+                                "startLine": 29,
+                                "endLine": 29,
+                                "startOffset": 20,
+                                "endOffset": 40
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertNotEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertNotEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tuoqryy_UizGCNez",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+            "project": "clientes",
+            "line": 35,
+            "hash": "b139370af1361199873c80e2a50f69ca",
+            "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 8,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+                            "textRange": {
+                                "startLine": 35,
+                                "endLine": 35,
+                                "startOffset": 20,
+                                "endOffset": 40
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertNotEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertNotEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tuoqryy_UizGCNe0",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+            "project": "clientes",
+            "line": 41,
+            "hash": "b139370af1361199873c80e2a50f69ca",
+            "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 8,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+                            "textRange": {
+                                "startLine": 41,
+                                "endLine": 41,
+                                "startOffset": 20,
+                                "endOffset": 40
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertNotEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertNotEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tuoqryy_UizGCNe1",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+            "project": "clientes",
+            "line": 47,
+            "hash": "b139370af1361199873c80e2a50f69ca",
+            "textRange": {
+                "startLine": 47,
+                "endLine": 47,
+                "startOffset": 8,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+                            "textRange": {
+                                "startLine": 47,
+                                "endLine": 47,
+                                "startOffset": 20,
+                                "endOffset": 40
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertNotEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertNotEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tuoqryy_UizGCNe2",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+            "project": "clientes",
+            "line": 53,
+            "hash": "b139370af1361199873c80e2a50f69ca",
+            "textRange": {
+                "startLine": 53,
+                "endLine": 53,
+                "startOffset": 8,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+                            "textRange": {
+                                "startLine": 53,
+                                "endLine": 53,
+                                "startOffset": 20,
+                                "endOffset": 40
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertNotEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertNotEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tuoqryy_UizGCNe3",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+            "project": "clientes",
+            "line": 59,
+            "hash": "b139370af1361199873c80e2a50f69ca",
+            "textRange": {
+                "startLine": 59,
+                "endLine": 59,
+                "startOffset": 8,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+                            "textRange": {
+                                "startLine": 59,
+                                "endLine": 59,
+                                "startOffset": 20,
+                                "endOffset": 40
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertNotEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertNotEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tuoqryy_UizGCNe4",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+            "project": "clientes",
+            "line": 63,
+            "hash": "fe3fa1a028291b7f4c963881f3116adb",
+            "textRange": {
+                "startLine": 63,
+                "endLine": 63,
+                "startOffset": 8,
+                "endOffset": 18
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/infra/BaseEntityExtraTest.java",
+                            "textRange": {
+                                "startLine": 63,
+                                "endLine": 63,
+                                "startOffset": 19,
+                                "endOffset": 39
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tungryy_UizGCNet",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/dto/ServicoPrestadoProjectionDTOExtraTest.java",
+            "project": "clientes",
+            "line": 53,
+            "hash": "8e3eb4e3b92800102649902a9e7b0cbd",
+            "textRange": {
+                "startLine": 53,
+                "endLine": 53,
+                "startOffset": 8,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/dto/ServicoPrestadoProjectionDTOExtraTest.java",
+                            "textRange": {
+                                "startLine": 53,
+                                "endLine": 53,
+                                "startOffset": 20,
+                                "endOffset": 36
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertNotEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertNotEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Tungryy_UizGCNeu",
+            "rule": "java:S5785",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/dto/ServicoPrestadoProjectionDTOExtraTest.java",
+            "project": "clientes",
+            "line": 56,
+            "hash": "768d22a2e266dcfb641c4baf4c37885f",
+            "textRange": {
+                "startLine": 56,
+                "endLine": 56,
+                "startOffset": 8,
+                "endOffset": 19
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/rest/dto/ServicoPrestadoProjectionDTOExtraTest.java",
+                            "textRange": {
+                                "startLine": 56,
+                                "endLine": 56,
+                                "startOffset": 20,
+                                "endOffset": 40
+                            },
+                            "msg": "An equals check is performed here, which is better expressed with assertNotEquals.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Use assertNotEquals instead.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T01:51:29+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Gy6Xryy_UizGCKOW",
+            "rule": "java:S3415",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/model/entity/EntitiesTest.java",
+            "project": "clientes",
+            "line": 86,
+            "hash": "ce998b6759b93cb485957c227b1aa200",
+            "textRange": {
+                "startLine": 86,
+                "endLine": 86,
+                "startOffset": 30,
+                "endOffset": 34
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/model/entity/EntitiesTest.java",
+                            "textRange": {
+                                "startLine": 86,
+                                "endLine": 86,
+                                "startOffset": 24,
+                                "endOffset": 28
+                            },
+                            "msg": "Other argument to swap.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Swap these 2 arguments so they are in the correct order: expected value, actual value.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "suspicious",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T00:54:54+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Gy6Xryy_UizGCKOX",
+            "rule": "java:S3415",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/model/entity/EntitiesTest.java",
+            "project": "clientes",
+            "line": 459,
+            "hash": "dc1bd2612aa4d84576012bc0ca95e2c3",
+            "textRange": {
+                "startLine": 459,
+                "endLine": 459,
+                "startOffset": 28,
+                "endOffset": 32
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/model/entity/EntitiesTest.java",
+                            "textRange": {
+                                "startLine": 459,
+                                "endLine": 459,
+                                "startOffset": 24,
+                                "endOffset": 26
+                            },
+                            "msg": "Other argument to swap.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Swap these 2 arguments so they are in the correct order: expected value, actual value.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "suspicious",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T00:54:54+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AZs0Gy6Xryy_UizGCKOY",
+            "rule": "java:S3415",
+            "severity": "MAJOR",
+            "component": "clientes:src/test/java/io/github/hvogel/clientes/model/entity/EntitiesTest.java",
+            "project": "clientes",
+            "line": 516,
+            "hash": "42c0f5df5e473c26c129f998b4387105",
+            "textRange": {
+                "startLine": 516,
+                "endLine": 516,
+                "startOffset": 28,
+                "endOffset": 32
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "clientes:src/test/java/io/github/hvogel/clientes/model/entity/EntitiesTest.java",
+                            "textRange": {
+                                "startLine": 516,
+                                "endLine": 516,
+                                "startOffset": 24,
+                                "endOffset": 26
+                            },
+                            "msg": "Other argument to swap.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Swap these 2 arguments so they are in the correct order: expected value, actual value.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "hamdenvogel@gmail.com",
+            "tags": [
+                "junit",
+                "suspicious",
+                "tests"
+            ],
+            "creationDate": "2025-12-19T00:54:54+0000",
+            "updateDate": "2025-12-19T20:02:57+0000",
+            "type": "CODE_SMELL",
+            "scope": "TEST",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        }
+    ],
+    "minor": []
+}

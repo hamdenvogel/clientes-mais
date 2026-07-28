@@ -1,0 +1,175 @@
+<div class="crud-page crud-form crud-page--raised crud-page--compact crud-page--fit-screen crud-page--servico-form">
+<div class="crud-header">
+    <div class="crud-header__identity">
+        <div class="crud-header__brand" aria-label="Clientes Mais+">
+            <img class="crud-header__logo" src="assets/logo-clientes-mais-icon.svg" alt="Logo Clientes Mais+" />
+            <span class="crud-header__brand-text">Clientes <strong>Mais+</strong></span>
+        </div>
+        <div class="crud-header__copy">
+            <h4>Gerenciamento de Servicos</h4>
+            <h4 class="subheading">Modulo de administracao de servicos prestados do sistema.</h4>
+            <p class="text-muted">Filtre atendimentos, consulte o historico e acesse rapidamente as acoes operacionais.</p>
+        </div>
+    </div>
+</div>
+<div class="crud-card">
+    <form (submit)="onSubmit()" aria-label="Formulario de cadastro de servico prestado" novalidate>
+     <app-alert-message-form [listAlerts]="listAlerts"></app-alert-message-form>
+      <div class="row">
+        <div class="col-md-12">
+        <div class="crud-badge">
+          Cadastro de um servico prestado do cliente.
+        </div>
+      </div>
+    </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                        <label for="servicoCliente">Cliente: *</label>
+                    <select class="form-control"
+                            id="servicoCliente"
+                            [ngModelOptions]="{standalone: true}"
+                            [(ngModel)]="servico.idCliente" aria-required="true">
+                        <option value="">Selecione...</option>
+                        <option *ngFor="let cliente of clientes"
+                                [ngValue]="cliente.id">
+                            {{ cliente.nome }}
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                        <label for="inputDescricao">Descrição: *</label>
+                    <input class="form-control" maxlength="150"
+                            [(ngModel)]="servico.descricao" type="text"
+                            name="descricao" id="inputDescricao" required aria-required="true">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="inputData">Data: *</label>
+                        <input type="text"
+                            class="form-control"
+                            placeholder=""
+                            bsDatepicker
+                            [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY',
+                            returnFocusToInput: true,
+                            containerClass: 'theme-dark-blue',
+                            showTodayButton: true,
+                            showClearButton: true,
+                            todayPosition: 'left',
+                            clearPosition: 'right',
+                            isAnimated: true }"
+                            (bsValueChange)="onValueChange($event)"
+                            [(ngModel)]="servico.data"
+                            name="data"
+                            id="inputData"
+                            #inputData required aria-required="true">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                        <label for="inputPreco">Preço: *</label>
+                    <input class="form-control"
+                            [(ngModel)]="servico.preco" type="text"
+                            name="preco" id="inputPreco" required aria-required="true">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="servicoStatus">Status: *</label>
+                  <select class="form-control"
+                      id="servicoStatus"
+                          [ngModelOptions]="{standalone: true}"
+                      [(ngModel)]="servico.status" aria-required="true">
+                      <option value="E">Em Atendimento</option>
+                      <option value="C">Cancelado</option>
+                      <option value="F">Finalizado</option>
+                  </select>
+              </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+                <label for="servicoPrestador">Prestador:</label>
+                <select class="form-control"
+                    id="servicoPrestador"
+                        [ngModelOptions]="{standalone: true}"
+                        [(ngModel)]="servico.prestador.id">
+                    <option value="">Selecione...</option>
+                    <option *ngFor="let prestador of prestadores"
+                            [ngValue]="prestador.id">
+                        {{ prestador.nome }}
+                    </option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <label for="servicoNatureza">Natureza:</label>
+            <select class="form-control"
+                id="servicoNatureza"
+                    [ngModelOptions]="{standalone: true}"
+                    [(ngModel)]="servico.idNatureza">
+                <option value="">Selecione...</option>
+                <option *ngFor="let item of natureza"
+                        [ngValue]="item.id">
+                    {{ item.descricao }}
+                </option>
+            </select>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+                <label for="servicoTipo">Tipo *</label>
+            <select class="form-control"
+                    id="servicoTipo"
+                    [ngModelOptions]="{standalone: true}"
+                    [(ngModel)]="servico.tipo" aria-required="true">
+                <option value="U">Unitário</option>
+                <option value="P">Pacote (de serviços)</option>
+            </select>
+        </div>
+    </div>
+    </div>
+
+     <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <re-captcha (resolved)="resolved($event)"
+                siteKey="6LfWbsEbAAAAAHULqvnjRg_V5oInPHdy6jeyP8ZR">
+            </re-captcha>
+        </div>
+      </div>
+    </div>
+
+        <div class="row">
+            <div class="col-md-12 crud-actions">
+                <button type="submit" class="btn btn-success">
+                    <i class="fa fa-save"></i>
+                    Salvar
+                </button>
+
+                <button type="button" (click)="voltar()"
+                        class="btn btn-danger ml-1" >
+                    <i class="fa fa-arrow-alt-circle-left" ></i> Voltar
+                </button>
+            </div>
+        </div>
+
+    </form>
+</div>
+</div>

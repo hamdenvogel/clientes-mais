@@ -1,0 +1,47 @@
+@import '../../styles/base';
+
+.st-editor-container {
+  position: relative;
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+.st-area {
+  resize: vertical;
+  overflow: auto;
+  border: 1px solid $borderColor;
+  border-top: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  min-height: 200px;
+  padding: 5px;
+  background-color: white;
+
+  &:focus {
+    outline-color: $activeColor;
+  }
+
+  &:empty:not(:focus):before{
+    content: attr(data-placeholder);
+    color: $borderColor;
+    pointer-events: none;
+  }
+}
+
+.st-toolbar {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid $borderColor;
+  padding: 5px;
+  background-color: white;
+
+  &:focus {
+    outline-color: $activeColor;
+  }
+}

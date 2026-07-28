@@ -1,0 +1,159 @@
+<div class="crud-page crud-page--raised crud-page--compact crud-page--ultra-compact crud-page--fit-screen crud-page--clientes-lista">
+  <div class="crud-header">
+    <div class="crud-header__identity">
+      <div class="crud-header__brand" aria-label="Clientes Mais+">
+        <img class="crud-header__logo" src="assets/logo-clientes-mais-icon.svg" alt="Logo Clientes Mais+" />
+        <span class="crud-header__brand-text">Clientes <strong>Mais+</strong></span>
+      </div>
+      <div class="crud-header__copy">
+        <h4>Gerenciamento de Clientes</h4>
+        <h4 class="subheading">Modulo de administracao de clientes do sistema.</h4>
+        <p class="text-muted">Consulte, pesquise e acesse rapidamente as operacoes de cadastro.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="crud-card">
+    <app-alert-message-form [listAlerts]="listAlerts"></app-alert-message-form>
+
+    <div class="crud-actions mb-3">
+      <button class="btn btn-warning" (click)="novoCadastro()">
+        <i class="fa fa-plus" aria-hidden="true"></i> Novo
+      </button>
+      <button type="button" class="btn btn-success" routerLink="/home">
+        <i class="fa fa-home" aria-hidden="true"></i> Voltar
+      </button>
+      <button class="btn btn-info" (click)="staticModal.show()">
+        <i class="fa fa-search" aria-hidden="true"></i> Relatorio
+      </button>
+    </div>
+
+    <div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static', keyboard: false}"
+      tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="dialog-static-name">
+      <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <app-alert-message-form [listAlerts]="listAlertsReport"></app-alert-message-form>
+                </div>
+              </div>
+            </div>
+            <div class="modal-header">
+              <h4 id="dialog-static-name" class="modal-title pull-left">Gerar Relatorio</h4>
+              <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="staticModal.hide()">
+                <span aria-hidden="true" class="visually-hidden">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="clientesDtInicio">Data Inicio: *</label>
+                    <input type="date" class="form-control" style="font-size: 13px;" name="dtInicio" id="clientesDtInicio"
+                      [(ngModel)]="dtInicioConsulta" placeholder="dd/mm/yyyy" value="" min="2020-01-01" max="2030-12-31">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="clientesDtFim">Data Fim: *</label>
+                    <input type="date" class="form-control" style="font-size: 13px;" name="dtFim" id="clientesDtFim"
+                      [(ngModel)]="dtFimConsulta" placeholder="dd/mm/yyyy" value="" min="2020-01-01" max="2030-12-31">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <button type="submit" class="btn btn-success" (click)="pesquisar()">
+                    <i class="fa fa-search" aria-hidden="true"></i> Pesquisar
+                  </button>
+                </div>
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-warning ml-1" (click)="limparPesquisa()">
+                    <i class="fa fa-eraser" aria-hidden="true"></i> Limpar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Pesquisar clientes pelo nome"
+        placeholder="Pesquisar pelo Nome"
+        (keyup)="onKeyUp($event)"
+        (change)="onChange($event)"
+        [(ngModel)]="campoPesquisa" />
+      <div class="input-group-append">
+        <button class="btn btn-primary" (click)="pesquisarNome()" type="button">
+          Pesquisar
+        </button>
+      </div>
+    </div>
+
+    <div *ngIf="loading" class="alert alert-info" role="status">Carregando dados...</div>
+
+    <div class="crud-table">
+      <div class="table-responsive">
+        <table id="tbl_clientes" class="table table-hover table-striped" aria-label="Tabela de clientes">
+          <thead>
+            <tr class="thead-dark">
+              <th id="nome" scope="col" sortable="nome" role="button" tabindex="0" [attr.aria-sort]="orderFields[0]?.current ? (orderFields[0]?.sortAsc ? 'ascending' : 'descending') : 'none'" aria-label="Ordenar por nome" (click)="onSort('nome')" (keydown.enter)="onSort('nome')" (keydown.space)="onSort('nome'); $event.preventDefault()">Nome <img *ngIf="orderFields[0].current" [src]="orderFields[0].arrow" alt="" aria-hidden="true" /></th>
+              <th id="cpf" scope="col" sortable="cpf" role="button" tabindex="0" [attr.aria-sort]="orderFields[1]?.current ? (orderFields[1]?.sortAsc ? 'ascending' : 'descending') : 'none'" aria-label="Ordenar por CPF" (click)="onSort('cpf')" (keydown.enter)="onSort('cpf')" (keydown.space)="onSort('cpf'); $event.preventDefault()">CPF <img *ngIf="orderFields[1].current" [src]="orderFields[1].arrow" alt="" aria-hidden="true" /></th>
+              <th id="data" scope="col" sortable="data" role="button" tabindex="0" [attr.aria-sort]="orderFields[2]?.current ? (orderFields[2]?.sortAsc ? 'ascending' : 'descending') : 'none'" aria-label="Ordenar por data de cadastro" (click)="onSort('data')" (keydown.enter)="onSort('data')" (keydown.space)="onSort('data'); $event.preventDefault()">Data Cadastro <img *ngIf="orderFields[2].current" [src]="orderFields[2].arrow" alt="" aria-hidden="true" /></th>
+              <th scope="col" class="crud-table__actions-header">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of collectionCustomPagination.data | paginate: configCustomPagination">
+              <td>
+                <em class="text-item-grid">{{ item.nome }}</em>
+                <div id="pix" *ngIf="item.pix!=undefined">
+                  <span class="text-twitter">PIX:</span>
+                  <em class="text-facebook">{{ item.pix }}</em>
+                </div>
+              </td>
+              <td>{{ formatCpf(item.cpf) }}</td>
+              <td>{{ item.dataCadastro }}</td>
+              <td class="crud-table__actions">
+                <button class="btn btn-primary btn-sm crud-table__action" routerLink="/clientes/form/{{ item.id }}" title="Editar cliente">
+                  <i class="fa fa-edit" aria-hidden="true"></i>
+                  Editar
+                </button>
+                <button class="btn btn-danger btn-sm crud-table__action" (click)="openModal(templateExcluir, item.id)" title="Excluir cliente">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                  Excluir
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <pagination-controls id="customPaginate" [maxSize]="maxSize" (pageChange)="onPageChange($event)"
+        [previousLabel]="labels.previousLabel" [nextLabel]="labels.nextLabel">
+      </pagination-controls>
+    </div>
+  </div>
+
+  <ng-template #templateExcluir>
+    <div class="modal-body text-center" role="dialog" aria-modal="true" aria-labelledby="clientesExcluirTitle">
+      <p id="clientesExcluirTitle">Confirma a exclusão?</p>
+      <button type="button" class="btn btn-default" (click)="confirm()">Sim</button>
+      <button type="button" class="btn btn-primary" (click)="decline()">Não</button>
+    </div>
+  </ng-template>
+
+  <ng-template #template>
+    <div class="modal-body text-center" role="dialog" aria-modal="true" aria-labelledby="clientesDevTitle">
+      <p id="clientesDevTitle">Funcionalidade em Desenvolvimento.</p>
+      <button type="button" class="btn btn-primary" (click)="ok()">OK</button>
+    </div>
+  </ng-template>
+</div>
+

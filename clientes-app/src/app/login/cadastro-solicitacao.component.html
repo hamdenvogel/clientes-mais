@@ -1,0 +1,42 @@
+<div class="register-page">
+  <div class="register-container">
+    <!-- Header com logo e branding -->
+    <div class="register-header">
+      <div class="register-header__brand">
+        <img class="register-header__logo" src="assets/logo-clientes-mais-icon.svg" alt="Clientes Mais+" />
+        <span class="register-header__brand-text">Clientes <strong>Mais+</strong></span>
+      </div>
+      <div class="register-header__copy">
+        <h1>Novo Cadastro</h1>
+        <p class="register-header__subtitle">Informe seus dados para receber o link temporário de confirmação por e-mail</p>
+      </div>
+    </div>
+
+    <!-- Card com formulário -->
+    <div class="register-card">
+      <div class="register-card__body">
+        <app-alert-message-form [listAlerts]="listAlerts"></app-alert-message-form>
+
+        <form (submit)="solicitarCadastro(); $event.preventDefault()" aria-label="Formulario de solicitacao de cadastro" novalidate>
+          <div class="form-group">
+            <label for="cadastroLogin">Login</label>
+            <input id="cadastroLogin" name="username" [(ngModel)]="username" class="form-control" placeholder="Escolha um login" required aria-required="true" />
+          </div>
+
+          <div class="form-group">
+            <label for="cadastroEmail">E-mail</label>
+            <input id="cadastroEmail" name="email" [(ngModel)]="email" type="email" class="form-control" placeholder="voce@empresa.com" required aria-required="true" />
+          </div>
+
+          <div class="register-actions">
+            <button type="submit" class="btn btn-primary" [disabled]="loading">
+              {{ loading ? 'Enviando...' : 'Enviar confirmação' }}
+            </button>
+            <button type="button" class="btn btn-outline-secondary" (click)="voltarLogin()">Voltar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,101 @@
+<div class="crud-page crud-page--raised crud-page--compact crud-page--fit-screen">
+  <div class="crud-header">
+    <div class="crud-header__identity">
+      <div class="crud-header__brand" aria-label="Clientes Mais+">
+        <img class="crud-header__logo" src="assets/logo-clientes-mais-icon.svg" alt="Logo Clientes Mais+" />
+        <span class="crud-header__brand-text">Clientes <strong>Mais+</strong></span>
+      </div>
+      <div class="crud-header__copy">
+        <h4>Gerenciamento de Usuarios</h4>
+        <h4 class="subheading">Modulo administrativo de usuarios do sistema.</h4>
+        <p class="text-muted">Cadastre, edite permissões e acompanhe contas ativas da plataforma.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="crud-card">
+    <app-alert-message-form [listAlerts]="listAlerts"></app-alert-message-form>
+
+    <div class="crud-actions mb-3">
+      <button class="btn btn-warning" (click)="novoCadastro()">
+        <i class="fa fa-plus" aria-hidden="true"></i> Novo
+      </button>
+      <button type="button" class="btn btn-success" routerLink="/home">
+        <i class="fa fa-home" aria-hidden="true"></i> Voltar
+      </button>
+    </div>
+
+    <div *ngIf="loading" class="alert alert-info" role="status">Carregando dados...</div>
+
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Pesquisar usuarios por login, email ou perfil"
+        placeholder="Pesquisar por login, email ou perfil"
+        (keyup)="onKeyUp()"
+        [(ngModel)]="campoPesquisa" />
+      <div class="input-group-append">
+        <button class="btn btn-primary" (click)="pesquisar()" type="button">Pesquisar</button>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-hover table-striped" aria-label="Tabela de usuarios cadastrados">
+        <thead>
+          <tr class="thead-dark">
+            <th>ID</th>
+            <th>Login</th>
+            <th>CPF</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Cidade/UF</th>
+            <th>Perfis</th>
+            <th>Ativo</th>
+            <th>Confirmado</th>
+            <th scope="col" class="crud-table__actions-header">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let usuario of usuariosFiltrados | paginate: config">
+            <td>{{ usuario.id }}</td>
+            <td>{{ usuario.username }}</td>
+            <td>{{ formatCpf(usuario.cpf) || '-' }}</td>
+            <td>{{ usuario.email || '-' }}</td>
+            <td>{{ formatTelefone(usuario.telefone) || '-' }}</td>
+            <td>{{ (usuario.cidade || '-') + (usuario.uf ? '/' + usuario.uf : '') }}</td>
+            <td>
+              <span class="badge badge-secondary role-pill" *ngFor="let role of usuario.roles">{{ role }}</span>
+            </td>
+            <td>
+              <span class="badge" [ngClass]="usuario.ativo ? 'badge-success' : 'badge-secondary'">
+                {{ usuario.ativo ? 'Sim' : 'Nao' }}
+              </span>
+            </td>
+            <td>
+              <span class="badge" [ngClass]="usuario.emailConfirmed ? 'badge-success' : 'badge-warning'">
+                {{ usuario.emailConfirmed ? 'Sim' : 'Nao' }}
+              </span>
+            </td>
+            <td class="crud-table__actions">
+              <button class="btn btn-primary btn-sm crud-table__action" (click)="editar(usuario)" title="Editar usuário">
+                <i class="fa fa-edit" aria-hidden="true"></i>
+                Editar
+              </button>
+              <button class="btn btn-danger btn-sm crud-table__action" (click)="deletar(usuario)" title="Excluir usuário">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                Excluir
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <pagination-controls
+        (pageChange)="onPageChange($event)"
+        previousLabel="<-Anterior"
+        nextLabel="Proxima->">
+      </pagination-controls>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,122 @@
+.app-shell {
+  height: calc(100vh - var(--app-topbar-height, 64px));
+  min-height: calc(100vh - var(--app-topbar-height, 64px));
+  overflow: hidden;
+  background:
+	radial-gradient(circle at top right, rgba(59, 130, 246, 0.08), transparent 24%),
+	linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+}
+
+.app-shell__content {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.app-main {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.app-content {
+  --app-content-padding-top: 14px;
+  --app-content-padding-bottom: 8px;
+  flex: 1;
+  min-height: 0;
+  padding: var(--app-content-padding-top) 12px var(--app-content-padding-bottom);
+  min-width: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.65) transparent;
+}
+
+.app-content::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.app-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.app-content::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.65);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Users form route: keep wheel/touch scroll behavior but hide vertical scrollbar visuals. */
+body.usuarios-form-no-vscroll .app-content {
+  scrollbar-width: none;
+}
+
+body.usuarios-form-no-vscroll .app-content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.app-footer {
+  margin-top: auto;
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(8px);
+}
+
+.app-footer__content {
+  padding: 10px 20px;
+}
+
+.app-footer__links {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-footer__links a {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+  .app-content,
+  .app-footer__content {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-height: 860px) {
+  .app-content {
+    --app-content-padding-top: 10px;
+    --app-content-padding-bottom: 6px;
+  }
+
+  .app-footer {
+    display: none;
+  }
+}
+
+@media (max-height: 768px) {
+  .app-content {
+    --app-content-padding-top: 8px;
+    --app-content-padding-bottom: 4px;
+  }
+}
+
+@media (max-height: 720px) {
+  .app-content {
+    --app-content-padding-top: 6px;
+    --app-content-padding-bottom: 3px;
+  }
+}
+

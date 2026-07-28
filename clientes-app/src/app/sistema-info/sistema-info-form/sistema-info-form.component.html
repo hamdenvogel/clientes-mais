@@ -1,0 +1,87 @@
+<h1 class="mt-4">Sobre</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Informa&ccedil;&otilde;es sobre o Sistema.</li>
+</ol>
+<div class="container">
+  <form #infoForm="ngForm">
+      <div class="row">
+          <div class="container py-3">
+  <div class="title h1 text-center">Clientes x Servi&ccedil;os Prestados</div>
+  <!-- Card Start -->
+  <div class="card">
+    <div class="row">
+
+      <div class="col-md-7 px-3">
+        <div class="card-block px-6">
+          <h4 class="card-title">M&oacute;dulo de Clientes </h4>
+          <p class="card-text">
+            Clientes s&atilde;o executores de servi&ccedil;os prestados. O foco deste sistema &eacute; gerir informa&ccedil;&otilde;es sobre quem executou certos servi&ccedil;os e quanto foi gasto em um dado per&iacute;odo.
+          </p>
+          <p class="card-text">Atrav&eacute;s de relat&oacute;rios &eacute; poss&iacute;vel acompanhar quanto foi gasto em X servi&ccedil;os em um m&ecirc;s, por exemplo.</p>
+          <br>
+          <a routerLink="/clientes" class="mt-auto btn btn-primary">Cadastrar agora</a>
+        </div>
+      </div>
+      <!-- Carousel start -->
+      <div class="col-md-5">
+        <carousel>
+          <slide>
+            <img src="../../../assets/img/005.png" alt="Imagem ilustrativa de painel de clientes" class="container_img">
+          </slide>
+          <slide>
+            <img src="../../../assets/img/2.jpg" alt="Imagem ilustrativa de servicos prestados" class="container_img">
+          </slide>
+          <slide>
+            <img src="../../../assets/img/3.jpg" alt="Imagem ilustrativa de administracao do sistema" class="container_img">
+          </slide>
+        </carousel>
+      </div> <!-- end class col-md-5-->
+      <!-- End of carousel -->
+    </div>
+  </div>
+  <!-- End of card -->
+</div>
+
+
+  </div>
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card float-left">
+            <div class="row ">
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <!--           <h4 class="card-title">Small card</h4> -->
+                  <p>Servi&ccedil;os Prestados para voc&ecirc; saber onde est&aacute; gastando seu dinheiro.</p>
+                  <p>Cadastre e veja seus atendimentos.</p>
+                  <a routerLink="/servicos-prestados" class="btn btn-primary btn-sm">Cadastrar</a>
+                </div>
+              </div>
+              <div class="col-sm-5">
+                <img class="container_img2" src="../../../assets/img/8.jpg" alt="Ilustracao de servicos prestados">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card float-left">
+            <div class="row ">
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <!--           <h4 class="card-title">Small card</h4> -->
+                  <p>Relat&oacute;rios pr&aacute;ticos e din&acirc;micos</p>
+                  <p>Acompanhe tudo e administre seu $$$</p>
+                  <button type="button" class="btn btn-success btn-sm" aria-label="Acompanhar relatorios em breve" disabled>Acompanhe</button>
+                </div>
+              </div>
+              <div class="col-sm-5">
+                <img class="container_img2" src="../../../assets/img/5.png" alt="Ilustracao de relatorios e indicadores">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+  </form>
+</div>

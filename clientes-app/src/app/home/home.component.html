@@ -1,0 +1,230 @@
+<div class="dashboard-page">
+
+  <!-- ══ HERO PREMIUM ══ -->
+  <section class="dashboard-hero">
+    <span class="hero-orb hero-orb--1"></span>
+    <span class="hero-orb hero-orb--2"></span>
+    <span class="hero-orb hero-orb--3"></span>
+
+    <div class="dashboard-hero__content">
+      <span class="dashboard-badge">
+        <span class="dashboard-badge__dot"></span>
+        Painel principal
+      </span>
+      <img class="dashboard-brand" src="assets/logo-clientes-mais.svg" alt="Clientes Mais+" />
+      <h1>Visão geral do <span class="hero-accent">sistema</span></h1>
+      <p>
+        Acompanhe o desempenho do sistema, indicadores operacionais e navegue rapidamente
+        pelas principais áreas da aplicação.
+      </p>
+    </div>
+
+    <div class="dashboard-hero__meta">
+      <div class="dashboard-meta-card">
+        <i class="fas fa-code-branch dashboard-meta-card__icon"></i>
+        <span>Versão</span>
+        <strong>{{ versionApp || '2.0' }}</strong>
+      </div>
+      <div class="dashboard-meta-card">
+        <i class="fas fa-user-circle dashboard-meta-card__icon"></i>
+        <span>Autor</span>
+        <strong>{{ authorApp || 'HVogel' }}</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ KPI CARDS ══ -->
+  <section class="stats-grid">
+    <a class="stat-card stat-card--blue stat-card--link" style="--delay:.05s" routerLink="/clientes/lista" title="Abrir clientes">
+      <div class="stat-card__icon"><i class="fas fa-users"></i></div>
+      <div class="stat-card__body">
+        <span>Clientes</span>
+        <strong>{{ totalClientesCadastrados || 0 }}</strong>
+      </div>
+      <div class="stat-card__bg-circle"></div>
+    </a>
+
+    <a class="stat-card stat-card--pink stat-card--link" style="--delay:.12s" routerLink="/servicos-prestados/lista" title="Abrir serviços prestados">
+      <div class="stat-card__icon"><i class="fas fa-briefcase"></i></div>
+      <div class="stat-card__body">
+        <span>Serviços</span>
+        <strong>{{ totalServicosCadastrados || 0 }}</strong>
+      </div>
+      <div class="stat-card__bg-circle"></div>
+    </a>
+
+    <a class="stat-card stat-card--green stat-card--link" style="--delay:.19s" routerLink="/prestador/lista" title="Abrir prestadores">
+      <div class="stat-card__icon"><i class="fas fa-user-tie"></i></div>
+      <div class="stat-card__body">
+        <span>Prestadores</span>
+        <strong>{{ totalPrestadoresCadastrados || 0 }}</strong>
+      </div>
+      <div class="stat-card__bg-circle"></div>
+    </a>
+
+    <a class="stat-card stat-card--amber stat-card--link" style="--delay:.26s" routerLink="/usuarios/lista" title="Abrir usuários">
+      <div class="stat-card__icon"><i class="fas fa-user-shield"></i></div>
+      <div class="stat-card__body">
+        <span>Usuários</span>
+        <strong>{{ totalUsuariosCadastrados || 0 }}</strong>
+      </div>
+      <div class="stat-card__bg-circle"></div>
+    </a>
+
+    <a class="stat-card stat-card--violet stat-card--link" style="--delay:.33s" routerLink="/pacote/lista" title="Abrir pacotes">
+      <div class="stat-card__icon"><i class="fas fa-cubes"></i></div>
+      <div class="stat-card__body">
+        <span>Pacotes</span>
+        <strong>{{ totalPacotesCadastrados || 0 }}</strong>
+      </div>
+      <div class="stat-card__bg-circle"></div>
+    </a>
+  </section>
+
+  <!-- ══ DASHBOARD GRID ══ -->
+  <section class="dashboard-grid">
+
+    <article class="dashboard-panel dashboard-panel--wide">
+      <div class="dashboard-panel__accent dashboard-panel__accent--blue"></div>
+      <div class="dashboard-panel__header">
+        <div>
+          <h2>Status de atendimento por período</h2>
+          <p>Evolução mensal dos serviços por situação.</p>
+        </div>
+        <span class="panel-badge panel-badge--blue"><i class="fas fa-chart-line"></i> Evolução</span>
+      </div>
+      <div class="chart-container chart-container--lg">
+        <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins">
+        </canvas>
+      </div>
+    </article>
+
+    <article class="dashboard-panel">
+      <div class="dashboard-panel__accent dashboard-panel__accent--violet"></div>
+      <div class="dashboard-panel__header">
+        <div>
+          <h2>Distribuição por status</h2>
+          <p>Participação percentual consolidada.</p>
+        </div>
+        <span class="panel-badge panel-badge--violet"><i class="fas fa-chart-pie"></i> Pizza</span>
+      </div>
+      <div class="chart-container chart-container--sm">
+        <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"
+          [plugins]="pieChartPlugins"
+          [colors]="pieChartColors"
+          [legend]="pieChartLegend">
+        </canvas>
+      </div>
+    </article>
+
+    <article class="dashboard-panel">
+      <div class="dashboard-panel__accent dashboard-panel__accent--indigo"></div>
+      <div class="dashboard-panel__header">
+        <div>
+          <h2>Acesso rápido</h2>
+          <p>Atalhos para as áreas mais utilizadas.</p>
+        </div>
+      </div>
+
+      <div class="quick-actions">
+        <a class="quick-action quick-action--blue" routerLink="/clientes">
+          <span class="quick-action__icon"><i class="fas fa-address-book"></i></span>
+          <span>Clientes</span>
+        </a>
+        <a class="quick-action quick-action--green" routerLink="/prestador">
+          <span class="quick-action__icon"><i class="fas fa-user-ninja"></i></span>
+          <span>Prestadores</span>
+        </a>
+        <a class="quick-action quick-action--indigo" routerLink="/usuarios">
+          <span class="quick-action__icon"><i class="fas fa-user-cog"></i></span>
+          <span>Usuários</span>
+        </a>
+        <a class="quick-action quick-action--amber" routerLink="/servicos-prestados">
+          <span class="quick-action__icon"><i class="fas fa-clipboard-list"></i></span>
+          <span>Serviços prestados</span>
+        </a>
+        <a class="quick-action quick-action--violet" routerLink="/pacote">
+          <span class="quick-action__icon"><i class="fas fa-box-open"></i></span>
+          <span>Pacotes</span>
+        </a>
+      </div>
+
+      <div class="welcome-card">
+        <span class="welcome-card__badge">Resumo</span>
+        <h3>Gestão centralizada e inteligente</h3>
+        <p>
+          Organize clientes, acompanhe serviços e visualize indicadores importantes do negócio
+          em um só painel.
+        </p>
+        <a class="btn btn-primary btn-premium" routerLink="/sistema-info">
+          Saiba mais <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+
+    <article class="dashboard-panel">
+      <div class="dashboard-panel__accent dashboard-panel__accent--amber"></div>
+      <div class="dashboard-panel__header">
+        <div>
+          <h2>Percentual de atendimentos</h2>
+          <p>Comparativo por status atual.</p>
+        </div>
+        <span class="panel-badge panel-badge--amber"><i class="fas fa-percentage"></i> Status</span>
+      </div>
+
+      <div class="status-progress">
+        <div
+          *ngFor="let linha of valorPercentual"
+          class="status-progress__segment"
+          [style.width.%]="linha.PERCENTUAL"
+          [style.background-color]="linha.corSelecionada"
+          [title]="linha.STATUS + ': ' + linha.PERCENTUAL + '%'">
+        </div>
+      </div>
+
+      <div class="status-list">
+        <div class="status-list__row" *ngFor="let linha of valorPercentual">
+          <div class="status-list__label">
+            <span class="status-list__dot" [style.background-color]="linha.corSelecionada"></span>
+            <span>{{ linha.STATUS }}</span>
+          </div>
+          <strong>{{ linha.PERCENTUAL }}%</strong>
+        </div>
+      </div>
+    </article>
+
+    <article class="dashboard-panel dashboard-panel--wide">
+      <div class="dashboard-panel__accent dashboard-panel__accent--green"></div>
+      <div class="dashboard-panel__header">
+        <div>
+          <h2>Tipos de serviço por período</h2>
+          <p>Evolução entre serviços unitários e pacotes.</p>
+        </div>
+        <span class="panel-badge panel-badge--green"><i class="fas fa-chart-bar"></i> Barras</span>
+      </div>
+      <div class="chart-container chart-container--lg">
+        <canvas baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [legend]="barChartLegend"
+          [chartType]="barChartType">
+        </canvas>
+      </div>
+    </article>
+
+  </section>
+</div>
+

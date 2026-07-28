@@ -1,0 +1,190 @@
+<div class="crud-page crud-form crud-page--raised crud-page--compact crud-page--fit-screen crud-page--clientes-form">
+<div class="crud-header">
+  <div class="crud-header__identity">
+    <div class="crud-header__brand" aria-label="Clientes Mais+">
+      <img class="crud-header__logo" src="assets/logo-clientes-mais-icon.svg" alt="Logo Clientes Mais+" />
+      <span class="crud-header__brand-text">Clientes <strong>Mais+</strong></span>
+    </div>
+    <div class="crud-header__copy">
+      <h4>Gerenciamento de Clientes</h4>
+      <h4 class="subheading">Modulo de administracao de clientes do sistema.</h4>
+      <p class="text-muted">Consulte, pesquise e acesse rapidamente as operacoes de cadastro.</p>
+    </div>
+  </div>
+</div>
+
+<div class="crud-card">
+  <form #clienteForm="ngForm" (ngSubmit)="onSubmit()" aria-label="Formulario de cadastro de cliente" novalidate>
+    <app-alert-message-form [listAlerts]="listAlerts"></app-alert-message-form>
+    <div class="row">
+      <div class="col-md-12">
+      <div class="crud-badge">
+        Cliente e o dono do servico.
+      </div>
+    </div>
+  </div>
+        <div class="row crud-form-top-grid">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-md-8">
+                <div class="form-group">
+                          <label for="clienteNome">Nome: *</label>
+                    <input type="text" class="form-control" maxlength="150"
+                            id="clienteNome" [(ngModel)]="cliente.nome" name="nome" required aria-required="true" />
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                <div class="form-group">
+                        <label for="clienteCpf">CPF: *</label>
+                    <input type="text" class="form-control" maxlength="14"
+                          id="clienteCpf" [(ngModel)]="cliente.cpf" (ngModelChange)="onCpfChange($event)" name="cpf" required aria-required="true" />
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="crud-photo-panel">
+                <div class="form-group crud-photo-preview">
+                  <label>Foto</label>
+                  <img class="crud-photo crud-photo--clickable"
+                       [src]="foto || fotoNotFound"
+                       alt="Foto do cliente"
+                       role="button"
+                       tabindex="0"
+                       title="Clique para escolher arquivo"
+                       (click)="inputFile.click()"
+                       (keydown.enter)="inputFile.click()"
+                       (keydown.space)="inputFile.click(); $event.preventDefault()" />
+                </div>
+
+                <div class="crud-photo-tools crud-photo-tools--side">
+                  <input type="file" name="file" id="clienteFotoFile" #inputFile class="form-control-file crud-file-input" (change)="selectFile($event)" />
+                  <label class="btn btn-primary crud-file-button" for="clienteFotoFile">
+                    <i class="fas fa-upload"></i>
+                    Escolher arquivo
+                  </label>
+                  <small class="crud-file-name">{{ getSelectedFileName() }}</small>
+
+                  <div class="form-group" *ngIf="cliente.id && filename">
+                    <button type="button" class="btn btn-danger ml-1" (click)="deletarImagem()">
+                      <i class="fas fa-trash"></i>
+                      Apagar Imagem
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                      <label for="clientePix">PIX:</label>
+                  <input type="text" class="form-control" maxlength="50"
+                        id="clientePix" [(ngModel)]="cliente.pix" name="pix" />
+              </div>
+          </div>
+
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="clienteCep">CEP:</label>
+                <input type="text" class="form-control" maxlength="9"
+                    id="clienteCep" [(ngModel)]="cliente.cep" (ngModelChange)="onCepChange($event)" name="cep" #cep />
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                  <label for="clienteEndereco">Endere&ccedil;o:</label>
+                <input type="text" class="form-control" maxlength="100"
+                    id="clienteEndereco" [(ngModel)]="cliente.endereco" name="endereco" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+          <div class="form-group">
+              <label for="clienteComplemento">Complemento:</label>
+              <input type="text" class="form-control" maxlength="50"
+                id="clienteComplemento" [(ngModel)]="cliente.complemento" name="complemento" />
+          </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+            <label for="clienteUf">UF:</label>
+          <select class="form-control"
+              id="clienteUf"
+                  [ngModelOptions]="{standalone: true}"
+                  [(ngModel)]="cliente.uf" name="uf" maxlength="2" #inputUf
+                  >
+              <option value="">Selecione...</option>
+              <option *ngFor="let estado of uf"
+                      [ngValue]="estado.sigla">
+                  {{ estado.nome }}
+              </option>
+          </select>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-group">
+             <label for="clienteCidade">Cidade:</label>
+          <select class="form-control" maxlength="200"
+               id="clienteCidade"
+                 [ngModelOptions]="{standalone: true}"
+                 [(ngModel)]="cliente.cidade" name="cidade" [disabled]="cidadeDesabilitado"
+                 #inputCidade>
+             <option value="">Selecione...</option>
+             <option *ngFor="let cidades of cidade"
+                     [ngValue]="cidades.nome">
+                 {{ cidades.nome }}
+             </option>
+         </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <re-captcha (resolved)="resolved($event)" #captcha
+              siteKey="6LfWbsEbAAAAAHULqvnjRg_V5oInPHdy6jeyP8ZR">
+          </re-captcha>
+      </div>
+    </div>
+  </div>
+
+        <div class="row">
+            <div class="col-md-12 crud-actions">
+                <button type="submit" class="btn btn-success" *ngIf="!cliente.id">
+                    <i class="fa fa-save" ></i> Salvar
+                </button>
+
+                <button type="submit" class="btn btn-primary" *ngIf="cliente.id">
+                    <i class="fa fa-sync-alt" ></i> Atualizar
+                </button>
+
+                <button type="button"
+                        class="btn btn-warning ml-1"
+                        (click)="apagar()">
+                    <i class="fa fa-eraser"></i> Limpar
+                </button>
+
+                <button type="button" class="btn btn-danger ml-1" (click)="voltarParaListagem()">
+                    <i class="fa fa-arrow-alt-circle-left" ></i> Voltar
+                </button>
+            </div>
+
+        </div>
+    </form>
+</div>
+</div>
+
+
+

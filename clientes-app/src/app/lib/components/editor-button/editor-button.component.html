@@ -1,0 +1,7 @@
+<button type="button" class="st-button st-toolbar-item"
+        [title]="button?.title || ''"
+        [attr.aria-label]="button?.title || 'Acao do editor'"
+        (click)="onCommand(button?.command)"
+        [class.active]="state">
+  <i [class]="button?.icon" aria-hidden="true"></i>
+</button>

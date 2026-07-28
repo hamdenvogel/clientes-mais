@@ -1,0 +1,4307 @@
+{
+  "java:S1488": [
+    {
+      "key": "AZsT3YRk0CFI2rL098Gn",
+      "rule": "java:S1488",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/PrestadorController.java",
+      "project": "clientes",
+      "line": 228,
+      "hash": "ee16f94ea7b9d1952286ee8e01163fe6",
+      "textRange": {
+        "startLine": 228,
+        "endLine": 228,
+        "startOffset": 31,
+        "endOffset": 89
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Immediately return this expression instead of assigning it to the temporary variable \"prestadores\".",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2025-12-12T18:40:03+0000",
+      "updateDate": "2025-12-12T18:40:03+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nFhJkff21CxP2qF",
+      "rule": "java:S1488",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/PrestadorController.java",
+      "project": "clientes",
+      "line": 253,
+      "hash": "c506c2648ffc2b155907fb1ef65ca0c8",
+      "textRange": {
+        "startLine": 253,
+        "endLine": 253,
+        "startOffset": 42,
+        "endOffset": 106
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Immediately return this expression instead of assigning it to the temporary variable \"responseEntity\".",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    }
+  ],
+  "java:S116": [
+    {
+      "key": "AZrZ1nIiJkff21CxP2rj",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/entity/Produto.java",
+      "project": "clientes",
+      "line": 40,
+      "hash": "4fd4ff5342a8c3f8aed849565744d85a",
+      "textRange": {
+        "startLine": 40,
+        "endLine": 40,
+        "startOffset": 20,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"ano_fabricacao\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nIiJkff21CxP2rk",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/entity/Produto.java",
+      "project": "clientes",
+      "line": 43,
+      "hash": "49a6baf7ae6eed7278bec7f97b583c81",
+      "textRange": {
+        "startLine": 43,
+        "endLine": 43,
+        "startOffset": 20,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"ano_modelo\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tI",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 10,
+      "hash": "0d8ac24b48fda40a1ddd3d0a499633e7",
+      "textRange": {
+        "startLine": 10,
+        "endLine": 10,
+        "startOffset": 22,
+        "endOffset": 29
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"mes_ano\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tJ",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 11,
+      "hash": "614492dfbd975211bb861e2aa400c7bf",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 23,
+        "endOffset": 37
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"em_atendimento\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tO",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 72,
+      "hash": "9c717d3d316ea92647a35f9e650361f1",
+      "textRange": {
+        "startLine": 72,
+        "endLine": 72,
+        "startOffset": 23,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"mes_ano\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tP",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 73,
+      "hash": "0c200156d5d1997f18cefbce54a24973",
+      "textRange": {
+        "startLine": 73,
+        "endLine": 73,
+        "startOffset": 24,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"em_atendimento\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKnJkff21CxP2s_",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java",
+      "project": "clientes",
+      "line": 9,
+      "hash": "2e8df05d241ae334366f067c749cb117",
+      "textRange": {
+        "startLine": 9,
+        "endLine": 9,
+        "startOffset": 22,
+        "endOffset": 40
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"status_atendimento\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKnJkff21CxP2tC",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java",
+      "project": "clientes",
+      "line": 54,
+      "hash": "19da78880bc31e48a339152f58814b39",
+      "textRange": {
+        "startLine": 54,
+        "endLine": 54,
+        "startOffset": 23,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"status_atendimento\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sk",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 11,
+      "hash": "a9a8d23e9a58d689e4669c034662cfbe",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 26,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"i_percentual\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sl",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 12,
+      "hash": "90aa83406135cfe0fdcadf7512b4c038",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 26,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"a_percentual\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sm",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 13,
+      "hash": "1810adb54d3baacd89ce78d041280636",
+      "textRange": {
+        "startLine": 13,
+        "endLine": 13,
+        "startOffset": 26,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"e_percentual\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sn",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 14,
+      "hash": "c33557f362764e7a444f1645629bdfc7",
+      "textRange": {
+        "startLine": 14,
+        "endLine": 14,
+        "startOffset": 26,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"c_percentual\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2so",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 15,
+      "hash": "11b1af6479dbb49c54c91f0e51774f53",
+      "textRange": {
+        "startLine": 15,
+        "endLine": 15,
+        "startOffset": 26,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"f_percentual\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sz",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 83,
+      "hash": "941bd14c8c82e0a5b7bb25634d7c7b66",
+      "textRange": {
+        "startLine": 83,
+        "endLine": 83,
+        "startOffset": 27,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"i_percentual\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2s0",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 84,
+      "hash": "23b6cb069174653952dd48ef49e2c40f",
+      "textRange": {
+        "startLine": 84,
+        "endLine": 84,
+        "startOffset": 27,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"a_percentual\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2s1",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 85,
+      "hash": "68f6e9bcf3f799a67b87963dec14eaa5",
+      "textRange": {
+        "startLine": 85,
+        "endLine": 85,
+        "startOffset": 27,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"e_percentual\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2s2",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 86,
+      "hash": "6550276fa67551e951e5eb2e7eb73bee",
+      "textRange": {
+        "startLine": 86,
+        "endLine": 86,
+        "startOffset": 27,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"c_percentual\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2s3",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 87,
+      "hash": "a92b73364a35bca59acb3239cd1f75ba",
+      "textRange": {
+        "startLine": 87,
+        "endLine": 87,
+        "startOffset": 27,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"f_percentual\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKUJkff21CxP2sV",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java",
+      "project": "clientes",
+      "line": 9,
+      "hash": "0d8ac24b48fda40a1ddd3d0a499633e7",
+      "textRange": {
+        "startLine": 9,
+        "endLine": 9,
+        "startOffset": 22,
+        "endOffset": 29
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"mes_ano\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKUJkff21CxP2sY",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java",
+      "project": "clientes",
+      "line": 62,
+      "hash": "9c717d3d316ea92647a35f9e650361f1",
+      "textRange": {
+        "startLine": 62,
+        "endLine": 62,
+        "startOffset": 23,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"mes_ano\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDdJkff21CxP2oi",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/ProdutoDTO.java",
+      "project": "clientes",
+      "line": 24,
+      "hash": "4fd4ff5342a8c3f8aed849565744d85a",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 17,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"ano_fabricacao\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDdJkff21CxP2oj",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/ProdutoDTO.java",
+      "project": "clientes",
+      "line": 26,
+      "hash": "49a6baf7ae6eed7278bec7f97b583c81",
+      "textRange": {
+        "startLine": 26,
+        "endLine": 26,
+        "startOffset": 17,
+        "endOffset": 27
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"ano_modelo\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2oX",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 7,
+      "hash": "920a0a2b34d6a32c7927c53f09f898d2",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 19,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"access_token\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2oY",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 8,
+      "hash": "181bff02ce7a8f97df4fc4b1a822e717",
+      "textRange": {
+        "startLine": 8,
+        "endLine": 8,
+        "startOffset": 20,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"expires_in\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2oZ",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 9,
+      "hash": "47608cb25d540a1d03ff393eae3a68da",
+      "textRange": {
+        "startLine": 9,
+        "endLine": 9,
+        "startOffset": 19,
+        "endOffset": 29
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"token_type\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1m9yJkff21CxP2nS",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/impl/CepServiceImpl.java",
+      "project": "clientes",
+      "line": 28,
+      "hash": "1fe93dbbdae07395dfc50ad0e12d0099",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 16,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"via_cep_format\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    }
+  ],
+  "java:S100": [
+    {
+      "key": "AZrZ1nIiJkff21CxP2rl",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/entity/Produto.java",
+      "project": "clientes",
+      "line": 85,
+      "hash": "f5790c0a1714fcb9025199a5ab9b9d55",
+      "textRange": {
+        "startLine": 85,
+        "endLine": 85,
+        "startOffset": 16,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nIiJkff21CxP2rm",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/entity/Produto.java",
+      "project": "clientes",
+      "line": 89,
+      "hash": "8080ad907a3f46331380f90ce02bcb1a",
+      "textRange": {
+        "startLine": 89,
+        "endLine": 89,
+        "startOffset": 13,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nIiJkff21CxP2rn",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/entity/Produto.java",
+      "project": "clientes",
+      "line": 93,
+      "hash": "be3ab8e13b9bbfd3070f9b738614f77f",
+      "textRange": {
+        "startLine": 93,
+        "endLine": 93,
+        "startOffset": 16,
+        "endOffset": 29
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nIiJkff21CxP2ro",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/entity/Produto.java",
+      "project": "clientes",
+      "line": 97,
+      "hash": "00a0d4f9b100384c7469885809a6882b",
+      "textRange": {
+        "startLine": 97,
+        "endLine": 97,
+        "startOffset": 13,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tK",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 21,
+      "hash": "8177e751f6aafa0d2c0a67f06087c405",
+      "textRange": {
+        "startLine": 21,
+        "endLine": 21,
+        "startOffset": 21,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tL",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 24,
+      "hash": "0bc2f472154aac68c8166c8830c49453",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 13,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tM",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 27,
+      "hash": "6bf9309f88afd4f93fe5065e4bfd5826",
+      "textRange": {
+        "startLine": 27,
+        "endLine": 27,
+        "startOffset": 22,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tN",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 30,
+      "hash": "e287ff058dba8b0f3c7546e16681b064",
+      "textRange": {
+        "startLine": 30,
+        "endLine": 30,
+        "startOffset": 13,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tQ",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 80,
+      "hash": "24cc82eb2f5ca251fb8c333fa822a022",
+      "textRange": {
+        "startLine": 80,
+        "endLine": 80,
+        "startOffset": 17,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tR",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 85,
+      "hash": "a5b3f3183abe75a0fca81336c25d4879",
+      "textRange": {
+        "startLine": 85,
+        "endLine": 85,
+        "startOffset": 17,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKnJkff21CxP2tA",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java",
+      "project": "clientes",
+      "line": 16,
+      "hash": "57f1377cb05de649ffe50f32ddbab7b2",
+      "textRange": {
+        "startLine": 16,
+        "endLine": 16,
+        "startOffset": 21,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKnJkff21CxP2tB",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java",
+      "project": "clientes",
+      "line": 19,
+      "hash": "6adf1893e5e14fb51d2a18939feeebba",
+      "textRange": {
+        "startLine": 19,
+        "endLine": 19,
+        "startOffset": 13,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKnJkff21CxP2tD",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java",
+      "project": "clientes",
+      "line": 60,
+      "hash": "c6846dad755f39b66024594988aa02c8",
+      "textRange": {
+        "startLine": 60,
+        "endLine": 60,
+        "startOffset": 17,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sp",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 24,
+      "hash": "bbbeeeb6be119a25439563ae673be334",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 25,
+        "endOffset": 40
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sq",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 27,
+      "hash": "1077492c868e267bca79ea390a882e88",
+      "textRange": {
+        "startLine": 27,
+        "endLine": 27,
+        "startOffset": 13,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sr",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 30,
+      "hash": "921e544b3243d21c531d8c6e0201b2e5",
+      "textRange": {
+        "startLine": 30,
+        "endLine": 30,
+        "startOffset": 25,
+        "endOffset": 40
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2ss",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 33,
+      "hash": "c4ff1e7c82f3d16b88590b0dc76f00a5",
+      "textRange": {
+        "startLine": 33,
+        "endLine": 33,
+        "startOffset": 13,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2st",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 36,
+      "hash": "ef026137b006ada639f6ef9a42fdd507",
+      "textRange": {
+        "startLine": 36,
+        "endLine": 36,
+        "startOffset": 25,
+        "endOffset": 40
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2su",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 39,
+      "hash": "147d0bfe4cfc4f121bfea62171210c1b",
+      "textRange": {
+        "startLine": 39,
+        "endLine": 39,
+        "startOffset": 13,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sv",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 42,
+      "hash": "3d3f91bbaf746bc8b53f8c721c5bb597",
+      "textRange": {
+        "startLine": 42,
+        "endLine": 42,
+        "startOffset": 25,
+        "endOffset": 40
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sw",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 45,
+      "hash": "80a6cf1e0d5caae1676a3e415c821f47",
+      "textRange": {
+        "startLine": 45,
+        "endLine": 45,
+        "startOffset": 13,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sx",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 48,
+      "hash": "97baea6c9c93a05f758e5a057a38f474",
+      "textRange": {
+        "startLine": 48,
+        "endLine": 48,
+        "startOffset": 25,
+        "endOffset": 40
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sy",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 51,
+      "hash": "0a377a1b249ba0925c200c7b1090092f",
+      "textRange": {
+        "startLine": 51,
+        "endLine": 51,
+        "startOffset": 13,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2s4",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 92,
+      "hash": "46271798b4d7f22d0ae22ef579fda927",
+      "textRange": {
+        "startLine": 92,
+        "endLine": 92,
+        "startOffset": 17,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2s5",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 97,
+      "hash": "f0bb690a8b546d4ac684d5abcf642c23",
+      "textRange": {
+        "startLine": 97,
+        "endLine": 97,
+        "startOffset": 17,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2s6",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 102,
+      "hash": "34c9f2053a93a24234599d9c7e827118",
+      "textRange": {
+        "startLine": 102,
+        "endLine": 102,
+        "startOffset": 17,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2s7",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 107,
+      "hash": "c7ed3c6c8cbbcdcb52363da179698651",
+      "textRange": {
+        "startLine": 107,
+        "endLine": 107,
+        "startOffset": 17,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2s8",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 112,
+      "hash": "1bff8d85265791466bef1fc45fae6967",
+      "textRange": {
+        "startLine": 112,
+        "endLine": 112,
+        "startOffset": 17,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKUJkff21CxP2sW",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java",
+      "project": "clientes",
+      "line": 18,
+      "hash": "8177e751f6aafa0d2c0a67f06087c405",
+      "textRange": {
+        "startLine": 18,
+        "endLine": 18,
+        "startOffset": 21,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKUJkff21CxP2sX",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java",
+      "project": "clientes",
+      "line": 21,
+      "hash": "0bc2f472154aac68c8166c8830c49453",
+      "textRange": {
+        "startLine": 21,
+        "endLine": 21,
+        "startOffset": 13,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKUJkff21CxP2sZ",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java",
+      "project": "clientes",
+      "line": 69,
+      "hash": "24cc82eb2f5ca251fb8c333fa822a022",
+      "textRange": {
+        "startLine": 69,
+        "endLine": 69,
+        "startOffset": 17,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nJdJkff21CxP2r_",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/PacoteRepository.java",
+      "project": "clientes",
+      "line": 39,
+      "hash": "acd010370f31e6580f88f1d4bd0e28d9",
+      "textRange": {
+        "startLine": 39,
+        "endLine": 39,
+        "startOffset": 18,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nJdJkff21CxP2sA",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/PacoteRepository.java",
+      "project": "clientes",
+      "line": 54,
+      "hash": "bffc07de97d27f3011eee07c5a8fa6ce",
+      "textRange": {
+        "startLine": 54,
+        "endLine": 54,
+        "startOffset": 18,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nJdJkff21CxP2sB",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/PacoteRepository.java",
+      "project": "clientes",
+      "line": 69,
+      "hash": "463b49d8838cbf6f959121860c780ee5",
+      "textRange": {
+        "startLine": 69,
+        "endLine": 69,
+        "startOffset": 18,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nJdJkff21CxP2sC",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/PacoteRepository.java",
+      "project": "clientes",
+      "line": 84,
+      "hash": "822ef204ed8b870f1cb5bc5ee01f613a",
+      "textRange": {
+        "startLine": 84,
+        "endLine": 84,
+        "startOffset": 18,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nJdJkff21CxP2sD",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/PacoteRepository.java",
+      "project": "clientes",
+      "line": 99,
+      "hash": "c5b684474093de59eca1978474a0af05",
+      "textRange": {
+        "startLine": 99,
+        "endLine": 99,
+        "startOffset": 18,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nJUJkff21CxP2rt",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ServicoPrestadoRepository.java",
+      "project": "clientes",
+      "line": 82,
+      "hash": "dff6f766fc3f96e866ed1e6e516ee3fc",
+      "textRange": {
+        "startLine": 82,
+        "endLine": 82,
+        "startOffset": 15,
+        "endOffset": 29
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nJUJkff21CxP2ru",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ServicoPrestadoRepository.java",
+      "project": "clientes",
+      "line": 125,
+      "hash": "63d841a65d6f5d689bd3bbd3dc0d4c43",
+      "textRange": {
+        "startLine": 125,
+        "endLine": 125,
+        "startOffset": 14,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nJVJkff21CxP2r5",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ServicoPrestadoRepository.java",
+      "project": "clientes",
+      "line": 138,
+      "hash": "3690bd93ce9e23c0732301b28b1c8dd5",
+      "textRange": {
+        "startLine": 138,
+        "endLine": 138,
+        "startOffset": 15,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDeJkff21CxP2ok",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/ProdutoDTO.java",
+      "project": "clientes",
+      "line": 70,
+      "hash": "f5790c0a1714fcb9025199a5ab9b9d55",
+      "textRange": {
+        "startLine": 70,
+        "endLine": 70,
+        "startOffset": 16,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDeJkff21CxP2ol",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/ProdutoDTO.java",
+      "project": "clientes",
+      "line": 74,
+      "hash": "8080ad907a3f46331380f90ce02bcb1a",
+      "textRange": {
+        "startLine": 74,
+        "endLine": 74,
+        "startOffset": 13,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDeJkff21CxP2om",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/ProdutoDTO.java",
+      "project": "clientes",
+      "line": 78,
+      "hash": "be3ab8e13b9bbfd3070f9b738614f77f",
+      "textRange": {
+        "startLine": 78,
+        "endLine": 78,
+        "startOffset": 16,
+        "endOffset": 29
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDeJkff21CxP2on",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/ProdutoDTO.java",
+      "project": "clientes",
+      "line": 82,
+      "hash": "00a0d4f9b100384c7469885809a6882b",
+      "textRange": {
+        "startLine": 82,
+        "endLine": 82,
+        "startOffset": 13,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2oa",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 16,
+      "hash": "2df45ecf27e2c48fc8bfe4b85d9ddff0",
+      "textRange": {
+        "startLine": 16,
+        "endLine": 16,
+        "startOffset": 15,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2ob",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 19,
+      "hash": "72c4cf7a3082f693cff53d5b70651b36",
+      "textRange": {
+        "startLine": 19,
+        "endLine": 19,
+        "startOffset": 13,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2oc",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 22,
+      "hash": "152370f7d6d0edb0ee1c10483ea14738",
+      "textRange": {
+        "startLine": 22,
+        "endLine": 22,
+        "startOffset": 16,
+        "endOffset": 29
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2od",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 25,
+      "hash": "97af273bbcd285864176ea0712238af9",
+      "textRange": {
+        "startLine": 25,
+        "endLine": 25,
+        "startOffset": 13,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2oe",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 28,
+      "hash": "cfc1f52ecb66d37dcb6d22ed143f90f1",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 15,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2of",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 31,
+      "hash": "0fe55b007367d8c396a3d1e21d74366c",
+      "textRange": {
+        "startLine": 31,
+        "endLine": 31,
+        "startOffset": 13,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nAjJkff21CxP2n3",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/PacoteService.java",
+      "project": "clientes",
+      "line": 23,
+      "hash": "acd010370f31e6580f88f1d4bd0e28d9",
+      "textRange": {
+        "startLine": 23,
+        "endLine": 23,
+        "startOffset": 18,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nAjJkff21CxP2n4",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/PacoteService.java",
+      "project": "clientes",
+      "line": 24,
+      "hash": "bffc07de97d27f3011eee07c5a8fa6ce",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 18,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nAjJkff21CxP2n5",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/PacoteService.java",
+      "project": "clientes",
+      "line": 25,
+      "hash": "463b49d8838cbf6f959121860c780ee5",
+      "textRange": {
+        "startLine": 25,
+        "endLine": 25,
+        "startOffset": 18,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nAjJkff21CxP2n6",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/PacoteService.java",
+      "project": "clientes",
+      "line": 26,
+      "hash": "822ef204ed8b870f1cb5bc5ee01f613a",
+      "textRange": {
+        "startLine": 26,
+        "endLine": 26,
+        "startOffset": 18,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nAjJkff21CxP2n7",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/PacoteService.java",
+      "project": "clientes",
+      "line": 27,
+      "hash": "c5b684474093de59eca1978474a0af05",
+      "textRange": {
+        "startLine": 27,
+        "endLine": 27,
+        "startOffset": 18,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1m_tJkff21CxP2nz",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/ServicoPrestadoService.java",
+      "project": "clientes",
+      "line": 37,
+      "hash": "dff6f766fc3f96e866ed1e6e516ee3fc",
+      "textRange": {
+        "startLine": 37,
+        "endLine": 37,
+        "startOffset": 15,
+        "endOffset": 29
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1m_uJkff21CxP2n0",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/ServicoPrestadoService.java",
+      "project": "clientes",
+      "line": 40,
+      "hash": "63d841a65d6f5d689bd3bbd3dc0d4c43",
+      "textRange": {
+        "startLine": 40,
+        "endLine": 40,
+        "startOffset": 14,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1m_uJkff21CxP2n1",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/ServicoPrestadoService.java",
+      "project": "clientes",
+      "line": 41,
+      "hash": "3690bd93ce9e23c0732301b28b1c8dd5",
+      "textRange": {
+        "startLine": 41,
+        "endLine": 41,
+        "startOffset": 15,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    }
+  ],
+  "java:S117": [
+    {
+      "key": "AZrZ1nIiJkff21CxP2rh",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/entity/Produto.java",
+      "project": "clientes",
+      "line": 89,
+      "hash": "8080ad907a3f46331380f90ce02bcb1a",
+      "textRange": {
+        "startLine": 89,
+        "endLine": 89,
+        "startOffset": 39,
+        "endOffset": 53
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nIiJkff21CxP2ri",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/entity/Produto.java",
+      "project": "clientes",
+      "line": 97,
+      "hash": "00a0d4f9b100384c7469885809a6882b",
+      "textRange": {
+        "startLine": 97,
+        "endLine": 97,
+        "startOffset": 35,
+        "endOffset": 45
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tE",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 24,
+      "hash": "0bc2f472154aac68c8166c8830c49453",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 37,
+        "endOffset": 44
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tF",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 30,
+      "hash": "e287ff058dba8b0f3c7546e16681b064",
+      "textRange": {
+        "startLine": 30,
+        "endLine": 30,
+        "startOffset": 45,
+        "endOffset": 59
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tG",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 80,
+      "hash": "24cc82eb2f5ca251fb8c333fa822a022",
+      "textRange": {
+        "startLine": 80,
+        "endLine": 80,
+        "startOffset": 42,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKuJkff21CxP2tH",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoLinear.java",
+      "project": "clientes",
+      "line": 85,
+      "hash": "a5b3f3183abe75a0fca81336c25d4879",
+      "textRange": {
+        "startLine": 85,
+        "endLine": 85,
+        "startOffset": 50,
+        "endOffset": 64
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKnJkff21CxP2s9",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java",
+      "project": "clientes",
+      "line": 19,
+      "hash": "6adf1893e5e14fb51d2a18939feeebba",
+      "textRange": {
+        "startLine": 19,
+        "endLine": 19,
+        "startOffset": 48,
+        "endOffset": 66
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKnJkff21CxP2s-",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoAtendimentoTorta.java",
+      "project": "clientes",
+      "line": 60,
+      "hash": "c6846dad755f39b66024594988aa02c8",
+      "textRange": {
+        "startLine": 60,
+        "endLine": 60,
+        "startOffset": 53,
+        "endOffset": 71
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sa",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 27,
+      "hash": "1077492c868e267bca79ea390a882e88",
+      "textRange": {
+        "startLine": 27,
+        "endLine": 27,
+        "startOffset": 46,
+        "endOffset": 58
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sb",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 33,
+      "hash": "c4ff1e7c82f3d16b88590b0dc76f00a5",
+      "textRange": {
+        "startLine": 33,
+        "endLine": 33,
+        "startOffset": 46,
+        "endOffset": 58
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sc",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 39,
+      "hash": "147d0bfe4cfc4f121bfea62171210c1b",
+      "textRange": {
+        "startLine": 39,
+        "endLine": 39,
+        "startOffset": 46,
+        "endOffset": 58
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sd",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 45,
+      "hash": "80a6cf1e0d5caae1676a3e415c821f47",
+      "textRange": {
+        "startLine": 45,
+        "endLine": 45,
+        "startOffset": 46,
+        "endOffset": 58
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2se",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 51,
+      "hash": "0a377a1b249ba0925c200c7b1090092f",
+      "textRange": {
+        "startLine": 51,
+        "endLine": 51,
+        "startOffset": 46,
+        "endOffset": 58
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sf",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 92,
+      "hash": "46271798b4d7f22d0ae22ef579fda927",
+      "textRange": {
+        "startLine": 92,
+        "endLine": 92,
+        "startOffset": 51,
+        "endOffset": 63
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sg",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 97,
+      "hash": "f0bb690a8b546d4ac684d5abcf642c23",
+      "textRange": {
+        "startLine": 97,
+        "endLine": 97,
+        "startOffset": 51,
+        "endOffset": 63
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sh",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 102,
+      "hash": "34c9f2053a93a24234599d9c7e827118",
+      "textRange": {
+        "startLine": 102,
+        "endLine": 102,
+        "startOffset": 51,
+        "endOffset": 63
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2si",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 107,
+      "hash": "c7ed3c6c8cbbcdcb52363da179698651",
+      "textRange": {
+        "startLine": 107,
+        "endLine": 107,
+        "startOffset": 51,
+        "endOffset": 63
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKdJkff21CxP2sj",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoStatusPacotePercentual.java",
+      "project": "clientes",
+      "line": 112,
+      "hash": "1bff8d85265791466bef1fc45fae6967",
+      "textRange": {
+        "startLine": 112,
+        "endLine": 112,
+        "startOffset": 51,
+        "endOffset": 63
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKUJkff21CxP2sT",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java",
+      "project": "clientes",
+      "line": 21,
+      "hash": "0bc2f472154aac68c8166c8830c49453",
+      "textRange": {
+        "startLine": 21,
+        "endLine": 21,
+        "startOffset": 37,
+        "endOffset": 44
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nKUJkff21CxP2sU",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/grafico/GraficoTipoServico.java",
+      "project": "clientes",
+      "line": 69,
+      "hash": "24cc82eb2f5ca251fb8c333fa822a022",
+      "textRange": {
+        "startLine": 69,
+        "endLine": 69,
+        "startOffset": 42,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nItJkff21CxP2rp",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ItemPacoteRepository.java",
+      "project": "clientes",
+      "line": 35,
+      "hash": "8c1532eafc08f5d27cba58dda851512c",
+      "textRange": {
+        "startLine": 35,
+        "endLine": 35,
+        "startOffset": 83,
+        "endOffset": 92
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nItJkff21CxP2rq",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ItemPacoteRepository.java",
+      "project": "clientes",
+      "line": 36,
+      "hash": "0ea9d43077102b081931d4f7f6200a03",
+      "textRange": {
+        "startLine": 36,
+        "endLine": 36,
+        "startOffset": 41,
+        "endOffset": 60
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nJUJkff21CxP2rs",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/model/repository/ServicoPrestadoRepository.java",
+      "project": "clientes",
+      "line": 54,
+      "hash": "0a129f4b41bd78ea132488186413a9f0",
+      "textRange": {
+        "startLine": 54,
+        "endLine": 54,
+        "startOffset": 53,
+        "endOffset": 63
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nGwJkff21CxP2q1",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/DiagnosticoController.java",
+      "project": "clientes",
+      "line": 87,
+      "hash": "504982febd8c8be4a671f153e9ea74d5",
+      "textRange": {
+        "startLine": 87,
+        "endLine": 87,
+        "startOffset": 13,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nEHJkff21CxP2oz",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/EquipamentoController.java",
+      "project": "clientes",
+      "line": 71,
+      "hash": "504982febd8c8be4a671f153e9ea74d5",
+      "textRange": {
+        "startLine": 71,
+        "endLine": 71,
+        "startOffset": 13,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nF_Jkff21CxP2qa",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+      "project": "clientes",
+      "line": 33,
+      "hash": "566f857242de6cd0591fd3fd1c21af36",
+      "textRange": {
+        "startLine": 33,
+        "endLine": 33,
+        "startOffset": 15,
+        "endOffset": 24
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nF_Jkff21CxP2qb",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+      "project": "clientes",
+      "line": 34,
+      "hash": "32d4a2624a165a48dfa04c474dcbb71e",
+      "textRange": {
+        "startLine": 34,
+        "endLine": 34,
+        "startOffset": 16,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nF_Jkff21CxP2qc",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+      "project": "clientes",
+      "line": 49,
+      "hash": "5beb160006af0017b939f03a43765fa1",
+      "textRange": {
+        "startLine": 49,
+        "endLine": 49,
+        "startOffset": 15,
+        "endOffset": 32
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nF_Jkff21CxP2qd",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+      "project": "clientes",
+      "line": 61,
+      "hash": "e47780a0a05500e08dd5ea32a709aaec",
+      "textRange": {
+        "startLine": 61,
+        "endLine": 61,
+        "startOffset": 19,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nF_Jkff21CxP2qe",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+      "project": "clientes",
+      "line": 62,
+      "hash": "751bbfbcabd674be61e791d26232a694",
+      "textRange": {
+        "startLine": 62,
+        "endLine": 62,
+        "startOffset": 19,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nF_Jkff21CxP2qf",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+      "project": "clientes",
+      "line": 63,
+      "hash": "58832f9237972afe0c2c3ba14bee4d59",
+      "textRange": {
+        "startLine": 63,
+        "endLine": 63,
+        "startOffset": 19,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nGAJkff21CxP2qg",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+      "project": "clientes",
+      "line": 64,
+      "hash": "ff7a287116bb71cdb33ab85f6926cd83",
+      "textRange": {
+        "startLine": 64,
+        "endLine": 64,
+        "startOffset": 19,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nGAJkff21CxP2qh",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+      "project": "clientes",
+      "line": 65,
+      "hash": "2311507c9239e254db43e2ddbdc859c8",
+      "textRange": {
+        "startLine": 65,
+        "endLine": 65,
+        "startOffset": 19,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nGAJkff21CxP2qi",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/GraficoController.java",
+      "project": "clientes",
+      "line": 79,
+      "hash": "10fa1ad47535e0658336f4d2658ace1a",
+      "textRange": {
+        "startLine": 79,
+        "endLine": 79,
+        "startOffset": 15,
+        "endOffset": 24
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nE2Jkff21CxP2pf",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ItemPacoteController.java",
+      "project": "clientes",
+      "line": 187,
+      "hash": "504982febd8c8be4a671f153e9ea74d5",
+      "textRange": {
+        "startLine": 187,
+        "endLine": 187,
+        "startOffset": 13,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nFhJkff21CxP2qB",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/PrestadorController.java",
+      "project": "clientes",
+      "line": 205,
+      "hash": "504982febd8c8be4a671f153e9ea74d5",
+      "textRange": {
+        "startLine": 205,
+        "endLine": 205,
+        "startOffset": 13,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nEdJkff21CxP2pP",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ProdutoController.java",
+      "project": "clientes",
+      "line": 157,
+      "hash": "504982febd8c8be4a671f153e9ea74d5",
+      "textRange": {
+        "startLine": 157,
+        "endLine": 157,
+        "startOffset": 13,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nEdJkff21CxP2pQ",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ProdutoController.java",
+      "project": "clientes",
+      "line": 198,
+      "hash": "504982febd8c8be4a671f153e9ea74d5",
+      "textRange": {
+        "startLine": 198,
+        "endLine": 198,
+        "startOffset": 13,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nESJkff21CxP2o8",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ServicoPrestadoController.java",
+      "project": "clientes",
+      "line": 419,
+      "hash": "504982febd8c8be4a671f153e9ea74d5",
+      "textRange": {
+        "startLine": 419,
+        "endLine": 419,
+        "startOffset": 13,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nGSJkff21CxP2qu",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/SolucaoController.java",
+      "project": "clientes",
+      "line": 87,
+      "hash": "504982febd8c8be4a671f153e9ea74d5",
+      "textRange": {
+        "startLine": 87,
+        "endLine": 87,
+        "startOffset": 13,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDdJkff21CxP2og",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/ProdutoDTO.java",
+      "project": "clientes",
+      "line": 74,
+      "hash": "8080ad907a3f46331380f90ce02bcb1a",
+      "textRange": {
+        "startLine": 74,
+        "endLine": 74,
+        "startOffset": 39,
+        "endOffset": 53
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDdJkff21CxP2oh",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/ProdutoDTO.java",
+      "project": "clientes",
+      "line": 82,
+      "hash": "00a0d4f9b100384c7469885809a6882b",
+      "textRange": {
+        "startLine": 82,
+        "endLine": 82,
+        "startOffset": 35,
+        "endOffset": 45
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2oU",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 19,
+      "hash": "72c4cf7a3082f693cff53d5b70651b36",
+      "textRange": {
+        "startLine": 19,
+        "endLine": 19,
+        "startOffset": 36,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2oV",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 25,
+      "hash": "97af273bbcd285864176ea0712238af9",
+      "textRange": {
+        "startLine": 25,
+        "endLine": 25,
+        "startOffset": 35,
+        "endOffset": 45
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nDPJkff21CxP2oW",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/TokenDTO.java",
+      "project": "clientes",
+      "line": 31,
+      "hash": "0fe55b007367d8c396a3d1e21d74366c",
+      "textRange": {
+        "startLine": 31,
+        "endLine": 31,
+        "startOffset": 34,
+        "endOffset": 44
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1m9yJkff21CxP2nQ",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/impl/CepServiceImpl.java",
+      "project": "clientes",
+      "line": 55,
+      "hash": "cf454e8beae464dba2ef90756722ae43",
+      "textRange": {
+        "startLine": 55,
+        "endLine": 55,
+        "startOffset": 9,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    }
+  ],
+  "java:S1612": [
+    {
+      "key": "AZrZ1nFsJkff21CxP2qN",
+      "rule": "java:S1612",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ApplicationControllerAdvice.java",
+      "project": "clientes",
+      "line": 25,
+      "hash": "c59c16833a117176c0af27d7ca27676d",
+      "textRange": {
+        "startLine": 25,
+        "endLine": 25,
+        "startOffset": 21,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this lambda with method reference 'MessageSourceResolvable::getDefaultMessage'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "java8"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nFVJkff21CxP2p5",
+      "rule": "java:S1612",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ClienteController.java",
+      "project": "clientes",
+      "line": 72,
+      "hash": "67981b67ecb0a4d5fba3ceed8998d946",
+      "textRange": {
+        "startLine": 72,
+        "endLine": 72,
+        "startOffset": 11,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this lambda with method reference 'Cliente::getNome'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "java8"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    },
+    {
+      "key": "AZrZ1nEkJkff21CxP2pX",
+      "rule": "java:S1612",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/PedidoController.java",
+      "project": "clientes",
+      "line": 54,
+      "hash": "14176bcbf0ad18c861df83f74ce01220",
+      "textRange": {
+        "startLine": 54,
+        "endLine": 54,
+        "startOffset": 23,
+        "endOffset": 25
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this lambda with method reference 'this::converter'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "java8"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    }
+  ],
+  "java:S2293": [
+    {
+      "key": "AZrZ1nFsJkff21CxP2qL",
+      "rule": "java:S2293",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/ApplicationControllerAdvice.java",
+      "project": "clientes",
+      "line": 36,
+      "hash": "9429eaf4e00a88cb5619325f6f5e6204",
+      "textRange": {
+        "startLine": 36,
+        "endLine": 36,
+        "startOffset": 27,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    }
+  ],
+  "java:S2786": [
+    {
+      "key": "AZrZ1nD1Jkff21CxP2ow",
+      "rule": "java:S2786",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/GoogleRecaptchaDTO.java",
+      "project": "clientes",
+      "line": 51,
+      "hash": "9f25e5bd7672de9c01a8c4434fdfdf43",
+      "textRange": {
+        "startLine": 51,
+        "endLine": 51,
+        "startOffset": 1,
+        "endOffset": 7
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "clientes:src/main/java/io/github/hvogel/clientes/rest/dto/GoogleRecaptchaDTO.java",
+              "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 8,
+                "endOffset": 12
+              },
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Remove this redundant \"static\" qualifier; nested enum types are implicitly static.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    }
+  ],
+  "java:S1905": [
+    {
+      "key": "AZrZ1m-_Jkff21CxP2nf",
+      "rule": "java:S1905",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/JwtService.java",
+      "project": "clientes",
+      "line": 86,
+      "hash": "f9b6a682a1a3594e69fac8352b80598e",
+      "textRange": {
+        "startLine": 86,
+        "endLine": 86,
+        "startOffset": 15,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unnecessary cast to \"String\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "clumsy",
+        "redundant"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    }
+  ],
+  "java:S1643": [
+    {
+      "key": "AZrZ1m7kJkff21CxP2mo",
+      "rule": "java:S1643",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/impl/ValidadorServiceImpl.java",
+      "project": "clientes",
+      "line": 77,
+      "hash": "098e9a52185590b357ba24e287195330",
+      "textRange": {
+        "startLine": 77,
+        "endLine": 77,
+        "startOffset": 3,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use a StringBuilder instead.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "performance"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    }
+  ],
+  "java:S5411": [
+    {
+      "key": "AZrZ1m7kJkff21CxP2mp",
+      "rule": "java:S5411",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/service/impl/ValidadorServiceImpl.java",
+      "project": "clientes",
+      "line": 108,
+      "hash": "c5077c9c98d898b00e75d8ac3a1623ae",
+      "textRange": {
+        "startLine": 108,
+        "endLine": 108,
+        "startOffset": 7,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use a primitive boolean expression here.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": []
+    }
+  ],
+  "java:S2386": [
+    {
+      "key": "AZrZ1nK-Jkff21CxP2tV",
+      "rule": "java:S2386",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/util/DateUtils.java",
+      "project": "clientes",
+      "line": 19,
+      "hash": "8302f19c832c9bcfa882cb1faf006285",
+      "textRange": {
+        "startLine": 19,
+        "endLine": 19,
+        "startOffset": 26,
+        "endOffset": 44
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make this member \"protected\".",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "cert",
+        "cwe",
+        "unpredictable"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    }
+  ],
+  "java:S1264": [
+    {
+      "key": "AZrZ1nK2Jkff21CxP2tS",
+      "rule": "java:S1264",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/util/HttpServletReqUtil.java",
+      "project": "clientes",
+      "line": 41,
+      "hash": "816d28b89d2c7eae4d775b94174e5d81",
+      "textRange": {
+        "startLine": 41,
+        "endLine": 41,
+        "startOffset": 2,
+        "endOffset": 5
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this \"for\" loop with a \"while\" loop.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    }
+  ],
+  "java:S4719": [
+    {
+      "key": "AZrZ1nK2Jkff21CxP2tT",
+      "rule": "java:S4719",
+      "severity": "MINOR",
+      "component": "clientes:src/main/java/io/github/hvogel/clientes/util/HttpServletReqUtil.java",
+      "project": "clientes",
+      "line": 56,
+      "hash": "c075f259ad83b26ca6f52f05b9f657d6",
+      "textRange": {
+        "startLine": 56,
+        "endLine": 56,
+        "startOffset": 58,
+        "endOffset": 65
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace charset name argument with StandardCharsets.UTF_8",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "",
+      "tags": [
+        "clumsy",
+        "java7"
+      ],
+      "creationDate": "2025-12-01T12:14:22+0000",
+      "updateDate": "2025-12-01T12:14:22+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": []
+    }
+  ]
+}

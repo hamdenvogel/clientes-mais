@@ -1,0 +1,42 @@
+# --- IDE / OS ---
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+*.log
+
+# --- Secrets ---
+.env
+.env.local
+.env.*.local
+**/.env
+!**/.env.example
+
+# --- Java / Maven ---
+**/target/
+**/*.class
+**/bin/
+
+# --- Node / Angular ---
+**/node_modules/
+**/dist/
+**/tmp/
+**/out-tsc/
+**/coverage/
+npm-debug.log*
+yarn-error.log*
+
+# --- Local / tooling noise ---
+des/
+.github/java-upgrade/
+.github/modernize/
+**/java-upgrade/
+clientes-api/.github/
+clientes-api/.vscode/
+clientes-api/*.json
+clientes-api/test_*.txt
+clientes-api/test_output*.txt
+clientes-api/test_coverage_output.txt
+clientes-api/test_errors.txt
+clientes-api/test_run.txt

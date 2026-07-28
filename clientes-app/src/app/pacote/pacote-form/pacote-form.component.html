@@ -1,0 +1,355 @@
+<div class="crud-page crud-form crud-page--raised crud-page--compact">
+<div class="crud-header">
+  <div class="crud-header__identity">
+    <div class="crud-header__brand" aria-label="Clientes Mais+">
+      <img class="crud-header__logo" src="assets/logo-clientes-mais-icon.svg" alt="Logo Clientes Mais+" />
+      <span class="crud-header__brand-text">Clientes <strong>Mais+</strong></span>
+    </div>
+    <div class="crud-header__copy">
+      <h4>Gerenciamento de Pacotes</h4>
+      <h4 class="subheading">Modulo de administracao de pacotes do sistema.</h4>
+      <p class="text-muted">Consulte, pesquise e acesse rapidamente as operacoes de cadastro.</p>
+    </div>
+  </div>
+</div>
+
+<div class="crud-card">
+  <form #prestadorForm="ngForm" (ngSubmit)="onSubmit()" aria-label="Formulario de cadastro de pacote" novalidate>
+    <app-alert-message-form [listAlerts]="listAlerts"></app-alert-message-form>
+<div class="row">
+  <div class="col-md-12">
+  <div class="crud-badge">
+    Pacote e um conjunto de servicos a ser executado.
+  </div>
+</div>
+</div>
+<div class="row" *ngIf="pacote.id">
+  <div class="col-md-6">
+      <div class="form-group">
+          <label>ID:</label>
+          <input type="text" [ngModel]="pacote.id" name="id" class="form-control" disabled="true" />
+      </div>
+  </div>
+
+  <div class="col-md-6">
+      <div class="form-group">
+          <label>Data Criação:</label>
+          <input type="text" class="form-control" name="data"
+                 [ngModel]="pacote.data" disabled="true"  />
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+      <div class="form-group">
+             <label for="pacoteDescricao">Descrição: *</label>
+          <input type="text" class="form-control" maxlength="300"
+               id="pacoteDescricao" [(ngModel)]="pacote.descricao" name="descricao" required aria-required="true" />
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+      <div class="form-group">
+             <label for="pacoteJustificativa">Justificativa: *</label>
+          <input type="text" class="form-control" maxlength="100"
+               id="pacoteJustificativa" [(ngModel)]="pacote.justificativa" name="justificativa" required aria-required="true" />
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+      <div class="form-group">
+          <label>Data Previsão:</label>
+              <input type="text"
+                  class="form-control"
+                  placeholder=""
+                  bsDatepicker
+                  [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY',
+                  returnFocusToInput: true,
+                  containerClass: 'theme-dark-blue',
+                  showTodayButton: true,
+                  showClearButton: true,
+                  todayPosition: 'left',
+                  clearPosition: 'right',
+                  isAnimated: true }"
+                  (bsValueChange)="onValueChangeDtPrevisao($event)"
+                  [(ngModel)]="pacote.data_previsao"
+                  name="inputDataPrevisao"
+                  id="inputDataPrevisao"
+                  #inputDataPrevisao>
+
+      </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+        <label>Data Conclusão:</label>
+          <input type="text"
+            class="form-control"
+            placeholder=""
+            bsDatepicker
+            [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY',
+            returnFocusToInput: true,
+            containerClass: 'theme-dark-blue',
+            showTodayButton: true,
+            showClearButton: true,
+            todayPosition: 'left',
+            clearPosition: 'right',
+            isAnimated: true }"
+            (bsValueChange)="onValueChangeDtConclusao($event)"
+            [(ngModel)]="pacote.data_conclusao"
+            name="inputDataConclusao"
+            id="inputDataConclusao"
+            #inputDataConclusao>
+
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+      <div class="form-group">
+            <label for="pacoteStatus">Status *</label>
+          <select class="form-control"
+              id="pacoteStatus"
+                  [ngModelOptions]="{standalone: true}"
+              [(ngModel)]="pacote.status" aria-required="true">
+              <option value="I">Iniciado</option>
+              <option value="A">Aguardando atendimento</option>
+              <option value="E">Em atendimento</option>
+              <option value="C">Cancelado</option>
+              <option value="F">Finalizado</option>
+          </select>
+      </div>
+  </div>
+ </div>
+
+<div class="row">
+  <div class="col-md-12 crud-actions">
+      <button type="submit" class="btn btn-success" *ngIf="id == undefined">
+          <i class="fa fa-save" ></i> Salvar
+      </button>
+
+      <button type="submit" class="btn btn-primary" *ngIf="pacote.id">
+          <i class="fa fa-sync-alt" ></i> Atualizar
+      </button>
+
+      <button type="button"
+              class="btn btn-warning ml-1"
+              (click)="apagar()">
+          <i class="fa fa-eraser"></i> Limpar
+      </button>
+
+      <button type="button" class="btn btn-danger ml-1" (click)="voltarParaListagem()">
+          <i class="fa fa-arrow-alt-circle-left" ></i> Voltar
+      </button>
+  </div>
+
+</div>
+
+<br />
+<div *ngIf="pacote.id">
+  <div class="row">
+    <div class="col-md-12">
+    <h4 class="subheading">Relacionar servicos abaixo:</h4>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+
+        <div class="list row">
+          <div class="col-md-12">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Pesquisar servicos por nome do cliente"
+                placeholder="Pesquisar pelo nome do cliente"
+                (keyup)="onKeyUp($event)"
+                [(ngModel)]="campoPesquisa" [ngModelOptions]="{standalone: true}"/>
+              <div class="input-group-append">
+                <button
+                  class="btn btn-primary"
+                  (click)="pesquisarDescricao()"
+                  type="button">
+                  Pesquisar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="row">
+              <div class="col-md-12">
+              <div class="table-responsive crud-table">
+              <table class="table table-hover table-striped" aria-label="Tabela de servicos para vincular ao pacote">
+                <thead>
+                  <tr class="thead-dark">
+                    <th><input type="checkbox" [checked]="isAllCheckBoxChecked()" (change)="checkAllCheckBox($event)"></th>
+                    <th>Cliente</th>
+                    <th>Descricao</th>
+                    <th>Preco</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of collectionCustomPagination.data | paginate: configCustomPagination">
+                    <td><input type="checkbox" value="{{item.id}}" [(ngModel)]="item.checked" [ngModelOptions]="{standalone: true}"></td>
+                    <td>
+                      <em class="text-item-grid">
+                        {{ item.cliente.nome }}
+                      </em>
+                    </td>
+                    <td>{{ item.descricao }} </td>
+                    <td>{{ item.valor }} </td>
+                    <td>{{ item.data }} </td>
+                    <td>{{ statusDetalhado[item.status] }}</td>
+                    <td>
+                        <button class="btn btn-primary"
+                            aria-label="Editar servico vinculado"
+                              routerLink="/servicos-prestados/form/{{item.id}}/pacoteform/{{pacote.id}}">
+                          <i class="fa fa-edit" aria-hidden="true"></i>
+                      </button>
+                      &nbsp;
+                        <button class="btn btn-danger"
+                          aria-label="Remover servico da selecao"
+                            (click)="openModal(template, item.id)">
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+              <pagination-controls id="customPaginate" [maxSize]="maxSize" (pageChange)="onPageChange($event)"
+                [previousLabel]="labels.previousLabel" [nextLabel]="labels.nextLabel">
+              </pagination-controls>
+            </div>
+          </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="crud-actions mt-3">
+    <button type="button" class="btn btn-primary" (click)="vincularServico()">
+      <i class="fa fa-save"></i> Vincular Servico
+    </button>
+
+    <button type="button" class="btn btn-success" (click)="novoServico()">
+      <i class="fa fa-plus"></i> Novo Servico
+    </button>
+  </div>
+
+  <br><br>
+  <div *ngIf="itemPacoteConsulta.length>0">
+    <div class="row">
+        <div class="col-md-12">
+          <h4 class="subheading">Relacao de servicos cadastrados para este pacote -
+             {{pacote.descricao}} </h4>
+        </div>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="itemPacoteConsulta.length>0">
+    <div class="col-md-12">
+      <div class="list row">
+        <div>
+          <div class="row">
+            <div class="col-md-12">
+            <div class="table-responsive crud-table">
+            <table class="table table-hover table-striped" aria-label="Tabela de servicos ja vinculados ao pacote">
+              <thead>
+                <tr class="thead-dark">
+                  <th>Cliente</th>
+                  <th>Descricao</th>
+                  <th>Pacote</th>
+                  <th>Prestador</th>
+                  <th>Acoes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of collectionCustomPaginationIP.data | paginate: configCustomPaginationIP">
+                  <td>{{ item.servicoPrestado.cliente.nome }}</td>
+                  <td>{{ item.servicoPrestado.descricao }} </td>
+                  <td>{{ item.pacote.descricao }} </td>
+                  <td>{{ item.servicoPrestado.prestador.nome }}</td>
+                  <td>
+                    <button class="btn btn-primary"
+                          aria-label="Editar servico vinculado ao pacote"
+                              routerLink="/servicos-prestados/form/{{item.servicoPrestado.id}}/pacoteform/{{pacote.id}}">
+                        <i class="fa fa-edit" aria-hidden="true"></i>
+                      </button>
+                      &nbsp;
+                    <button class="btn btn-danger"
+                       aria-label="Excluir servico vinculado ao pacote"
+                         (click)="openModal2(template2, pacote.id, item.servicoPrestado.id, $event)">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                      </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            <pagination-controls id="customPaginateIP" [maxSize]="maxSizeIP" (pageChange)="onPageChangeIP($event)"
+              [previousLabel]="labelsIP.previousLabel" [nextLabel]="labelsIP.nextLabel">
+            </pagination-controls>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<st-editor [(ngModel)]="content" [ngModelOptions]="{standalone: true}" [config]="config2"></st-editor>
+<br>
+<article class="message">
+  <div class="message-header">
+    <p>Output</p>
+  </div>
+  <div class="message-body code-background">
+            <pre class="code-background white-space-initial">
+              <code *ngIf="content"></code> <!-- Workaround for highlight directive -->
+              <code *ngIf="!content"></code> <!-- Workaround for highlight directive -->
+            </pre>
+  </div>
+</article>
+</form>
+
+<div class="container">
+  <div class="row">
+    <ng-template #template>
+      <div class="modal-body text-center" role="dialog" aria-modal="true" aria-labelledby="confirmExclusaoPacoteTitle">
+        <p id="confirmExclusaoPacoteTitle">Confirma a exclusao?</p>
+        <button type="button" class="btn btn-default" (click)="confirm()" >Sim</button>
+        <button type="button" class="btn btn-primary" (click)="decline()" >Nao</button>
+      </div>
+    </ng-template>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <ng-template #template2>
+      <div class="modal-body text-center" role="dialog" aria-modal="true" aria-labelledby="confirmExclusaoPacoteVinculadoTitle">
+        <p id="confirmExclusaoPacoteVinculadoTitle">Confirma a exclusao?</p>
+        <button type="button" class="btn btn-default" (click)="confirm2($event)" >Sim</button>
+        <button type="button" class="btn btn-primary" (click)="decline2($event)" >Nao</button>
+      </div>
+    </ng-template>
+
+    <div *ngIf="false">
+      <button (click)="throwError()">Error</button>
+      <button (click)="throwHttpError()">HTTP</button>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>

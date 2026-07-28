@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.crud-filters-form .row {
+  margin-bottom: 0.2rem;
+}
+
+.crud-filters-form .form-group,
+.crud-filters-form label {
+  margin-bottom: 0.2rem;
+}
+
+.crud-filters-form .form-control {
+  min-height: 34px;
+}
+
+.text-item-grid {
+  color: #14043f;
+  font-weight: 700;
+}

@@ -1,0 +1,62 @@
+name: CI — clientes-api
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "clientes-api/**"
+      - ".github/workflows/ci-api.yml"
+  pull_request:
+    paths:
+      - "clientes-api/**"
+      - ".github/workflows/ci-api.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: ci-api-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build, test & image
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: clientes-api
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+          cache-dependency-path: clientes-api/pom.xml
+
+      - name: Build and test
+        run: |
+          chmod +x mvnw
+          ./mvnw -B clean package
+
+      - name: Upload jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: clientes-api-jar
+          path: clientes-api/target/clientes-api.jar
+          retention-days: 7
+          if-no-files-found: error
+
+      - name: Build Docker image
+        run: docker build -t clientes-api:ci .
+        working-directory: clientes-api
+
+      - name: Upload Surefire reports on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports
+          path: clientes-api/target/surefire-reports/
+          if-no-files-found: ignore

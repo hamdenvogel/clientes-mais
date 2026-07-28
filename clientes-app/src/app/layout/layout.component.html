@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div id="layoutSidenav" class="app-shell">
+  <app-sidebar aria-label="Menu lateral principal"></app-sidebar>
+  <div id="layoutSidenav_content" class="app-shell__content">
+    <main id="main-content" class="app-main" role="main" tabindex="-1">
+      <div class="container-fluid app-content">
+        <router-outlet></router-outlet>
+      </div>
+      <footer class="app-footer mt-auto" role="contentinfo" aria-label="Rodape da aplicacao">
+        <div class="container-fluid app-footer__content">
+            <div class="d-flex align-items-center justify-content-between flex-wrap small">
+                <div class="text-muted">Clientes Mais+ &copy; 2020-2026 · Gestao profissional de servicos</div>
+                <div class="app-footer__links">
+                    <a href="#" aria-label="Site da HVogel Softwares">HVogel Softwares</a>
+                    <span>&middot;</span>
+                    <a href="#" aria-label="Termos e condicoes">Termos &amp; Condi&ccedil;&otilde;es</a>
+                </div>
+            </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+</div>
