@@ -27,7 +27,7 @@ kubectl config use-context "k3d-$ClusterName" | Out-Null
 
 Write-Host "==> Namespace + Secret..."
 kubectl apply -f (Join-Path $K8sDir "namespace.yaml")
-& (Join-Path $PSScriptRoot "create-secret.ps1")
+& (Join-Path $PSScriptRoot "create-k8s-env.ps1")
 
 Write-Host "==> Build imagem Docker local (se necessario)..."
 Push-Location $ApiDir

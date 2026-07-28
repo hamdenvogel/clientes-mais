@@ -140,7 +140,7 @@ ghcr.io/hamdenvogel/clientes-mais/clientes-api:latest
 
 - `infra/k8s/` — namespace, configmap, postgres (+PVC), api deployment/service/ingress, HPA opcional, kustomization
 - `infra/k8s/secret.example.yaml` — modelo (sem valores reais)
-- `infra/k3d/create-cluster.ps1`, `create-secret.ps1`, `deploy.ps1`, `destroy-cluster.ps1`
+- `infra/k3d/create-cluster.ps1`, `create-k8s-env.ps1`, `deploy.ps1`, `destroy-cluster.ps1`
 - `infra/k3d/values-rabbitmq.yaml` — Helm Bitnami RabbitMQ + persistence
 
 ---

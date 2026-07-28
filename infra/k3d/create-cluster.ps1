@@ -59,5 +59,5 @@ kubectl cluster-info
 Write-Host ""
 Write-Host "Cluster pronto."
 Write-Host "Proximos passos:"
-Write-Host "  1) .\create-secret.ps1"
+Write-Host "  1) .\create-k8s-env.ps1"
 Write-Host "  2) .\deploy.ps1"

@@ -15,7 +15,7 @@ Lab Kubernetes local: **K3d** + manifests + **RabbitMQ (Helm)** + PVC.
 cd C:\Hamden\Sistemas\Backend\clientes\infra\k3d
 
 .\create-cluster.ps1
-.\create-secret.ps1
+.\create-k8s-env.ps1
 .\deploy.ps1
 ```
 

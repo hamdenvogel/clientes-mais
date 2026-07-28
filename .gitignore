@@ -18,11 +18,13 @@ Thumbs.db
 **/application-local.yml
 **/application-secrets.properties
 **/secrets/
-**/credentials*
-**/*secret*
+**/credentials.json
+**/credentials.xml
 !**/*.example
 !**/*.example.*
 !**/environment.example.ts
+!**/create-k8s-env.ps1
+!**/secret.example.yaml
 
 # --- Java / Maven ---
 **/target/
