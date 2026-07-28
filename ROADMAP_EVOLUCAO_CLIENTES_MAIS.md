@@ -25,31 +25,19 @@
 
 ## Lista oficial (fechada)
 
-Ordem de execução acordada (`[x]` = feito, `[ ]` = pendente):
+Ordem de execução acordada:
 
 | # | Item | Status |
 |---|------|--------|
-| **1** | Docker multi-stage + Docker Compose (API + Postgres + RabbitMQ + Prometheus + Grafana) + métricas Actuator | [x] |
-| **2** | Pedidos + RabbitMQ (`RabbitTemplate`, `@RabbitListener`, TopicExchange, fila durável, retry, DLQ + endpoint de falha) | [x] |
-| **3** | GitHub Actions → publicação no GitHub Container Registry (imagem **amd64** e **arm64**) | [x] |
-| **4** | Primeiro lab Kubernetes: **K3d no Windows** (manifests, probes, limits; RabbitMQ via Helm) | [ ] |
-| **5** | **Hexagonal + DDD no projeto inteiro** (`clientes-api` — todos os bounded contexts; modular monolith) | [ ] |
-| **6** | Deploy público econômico: **Oracle Cloud Free Tier** + VM ARM + **K3s** + Helm + RabbitMQ + Spring Boot (scripts + README) — **já com a arquitetura do item 5** | [ ] |
-| **7** | **Front Angular LTS novo** = paridade total do legado + **signals** + **microfrontends** (ex.: cliente, prestador, …) + **SSR** (Nx + Storybook como base) | [ ] |
-| **8** | **Microsserviços no backend**, alinhados 1:1 com os microfrontends (ex.: `cliente-api` ↔ `mfe-cliente`, `prestador-api` ↔ `mfe-prestador`, …) + Rabbit entre serviços onde fizer sentido | [ ] |
-| **9** | *(Opcional)* Polish Storybook / federação avançada / gateway (API Gateway ou BFF) | [ ] |
-
-### Checklist (visual no GitHub)
-
-- [x] **1** — Docker Compose + Actuator/Prometheus/Grafana
-- [x] **2** — Pedidos + RabbitMQ (retry/DLQ)
-- [x] **3** — GitHub Actions → GHCR multi-arch
-- [ ] **4** — K3d no Windows
-- [ ] **5** — Hexagonal + DDD (projeto inteiro)
-- [ ] **6** — K3s na Oracle Cloud Always Free
-- [ ] **7** — Front Angular LTS + MF + signals + SSR (paridade total)
-- [ ] **8** — Microsserviços alinhados aos MFEs
-- [ ] **9** — Polish opcional (Storybook / gateway)
+| **1** | Docker multi-stage + Docker Compose (API + Postgres + RabbitMQ + Prometheus + Grafana) + métricas Actuator | ✅ concluída (local) |
+| **2** | Pedidos + RabbitMQ (`RabbitTemplate`, `@RabbitListener`, TopicExchange, fila durável, retry, DLQ + endpoint de falha) | ✅ concluída (local) |
+| **3** | GitHub Actions → publicação no GitHub Container Registry (imagem **amd64** e **arm64**) | ✅ concluída |
+| **4** | Primeiro lab Kubernetes: **K3d no Windows** (manifests, probes, limits; RabbitMQ via Helm) | ⏳ pendente |
+| **5** | **Hexagonal + DDD no projeto inteiro** (`clientes-api` — todos os bounded contexts; modular monolith) | ⏳ pendente |
+| **6** | Deploy público econômico: **Oracle Cloud Free Tier** + VM ARM + **K3s** + Helm + RabbitMQ + Spring Boot (scripts + README) — **já com a arquitetura do item 5** | ⏳ pendente |
+| **7** | **Front Angular LTS novo** = paridade total do legado + **signals** + **microfrontends** (ex.: cliente, prestador, …) + **SSR** (Nx + Storybook como base) | ⏳ pendente |
+| **8** | **Microsserviços no backend**, alinhados 1:1 com os microfrontends (ex.: `cliente-api` ↔ `mfe-cliente`, `prestador-api` ↔ `mfe-prestador`, …) + Rabbit entre serviços onde fizer sentido | ⏳ pendente |
+| **9** | *(Opcional)* Polish Storybook / federação avançada / gateway (API Gateway ou BFF) | ⏳ pendente |
 
 **Motivo da ordem 5 → 6:** o primeiro deploy público (K3s/OCI) sobe **depois** da hexagonal + DDD no modular monolith.
 
@@ -292,5 +280,6 @@ Item 3 (CI + GHCR) entregue no repo. Iniciar o **item 4**: K3d no Windows.
 | 2026-07-27 | **Item 2 concluído:** RabbitMQ TopicExchange + retry + DLQ; endpoints `/api/pedidos/async*` |
 | 2026-07-28 | Monorepo publicado em [hamdenvogel/clientes-mais](https://github.com/hamdenvogel/clientes-mais) (`clientes-api` + `clientes-app`) |
 | 2026-07-28 | Status do roadmap passou a usar checkboxes `[x]` / `[ ]` |
+| 2026-07-28 | Status da lista alinhado ao estilo do roteiro CI/CD (`✅ concluída` / `⏳ pendente`) |
 | 2026-07-28 | **Item 3:** workflows CI + publish GHCR multi-arch (`amd64`/`arm64`) |
 | 2026-07-28 | Remoção de secrets do código versionado; `.gitignore`/README/CONTRIBUTING/SECURITY reforçados |
