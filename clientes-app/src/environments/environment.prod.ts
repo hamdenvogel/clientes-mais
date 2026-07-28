@@ -1,7 +1,6 @@
 export const environment = {
   production: true,
-  apiURLBase: 'https://clientes-hvogel-api.herokuapp.com',
-  clientId: 'my-angular-app',
-  clientSecret: '@321',
+  apiURLBase: 'https://CHANGE_ME_API_PUBLIC_URL',
+  recaptchaSiteKey: '',
   obterTokenUrl: '/api/auth/signin'
 };

@@ -14,6 +14,7 @@ import { Constants } from 'src/app/shared/constants';
 import { Alert } from 'src/app/alert';
 import { MaskUtil } from 'src/app/shared/utils/mask.util';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-prestador-form',
@@ -29,6 +30,7 @@ export class PrestadorFormComponent implements OnInit, OnDestroy {
   googlecaptcha: GoogleCaptcha | undefined;
   profissao: Profissao[] = [];
   valorValido: string = "0";
+  recaptchaSiteKey = environment.recaptchaSiteKey;
 
   max = 10;
   isReadonly = false;

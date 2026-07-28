@@ -16,6 +16,7 @@ import { Alert } from 'src/app/alert';
 import { state } from '@angular/animations';
 import { MaskUtil } from 'src/app/shared/utils/mask.util';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-clientes-form',
@@ -38,6 +39,7 @@ export class ClientesFormComponent implements OnInit, OnDestroy {
   cidadeDesabilitado: boolean;
   captcha: string;
   googlecaptcha: GoogleCaptcha;
+  recaptchaSiteKey = environment.recaptchaSiteKey;
 
   foto: SafeUrl | string;
   filename: string = "";

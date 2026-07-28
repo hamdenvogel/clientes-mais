@@ -5,18 +5,30 @@
 .DS_Store
 Thumbs.db
 *.log
+*.swp
+*~
 
-# --- Secrets ---
+# --- Secrets / local overrides (NUNCA versionar) ---
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 **/.env
 !**/.env.example
+**/application-local.properties
+**/application-local.yml
+**/application-secrets.properties
+**/secrets/
+**/credentials*
+**/*secret*
+!**/*.example
+!**/*.example.*
+!**/environment.example.ts
 
 # --- Java / Maven ---
 **/target/
 **/*.class
 **/bin/
+**/.mvn/wrapper/maven-wrapper.jar
 
 # --- Node / Angular ---
 **/node_modules/
@@ -24,8 +36,10 @@ Thumbs.db
 **/tmp/
 **/out-tsc/
 **/coverage/
+.sass-cache/
 npm-debug.log*
 yarn-error.log*
+package-lock.json.bak
 
 # --- Local / tooling noise ---
 des/

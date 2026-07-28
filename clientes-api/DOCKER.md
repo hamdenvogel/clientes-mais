@@ -12,8 +12,11 @@ Stack: **API Spring Boot** + **Postgres** + **RabbitMQ (Management)** + **Promet
 ```powershell
 cd C:\Hamden\Sistemas\Backend\clientes\clientes-api
 copy .env.example .env
+# Edite .env e troque todos os CHANGE_ME_* por valores locais
 docker compose up --build -d
 ```
+
+**Importante:** o Compose **exige** `.env` preenchido (senhas/JWT). Não há senha padrão no repositório.
 
 Primeira build da API pode demorar (Maven baixa dependências na imagem).
 
@@ -23,10 +26,10 @@ Primeira build da API pode demorar (Maven baixa dependências na imagem).
 |---------|-----|
 | API health | http://localhost:8080/actuator/health |
 | API Prometheus | http://localhost:8080/actuator/prometheus |
-| RabbitMQ Management | http://localhost:15672 (user/pass: `clientes` / `clientes`) |
+| RabbitMQ Management | http://localhost:15672 (user/pass do `.env`) |
 | Prometheus | http://localhost:9090 |
-| Grafana | http://localhost:3000 (user/pass: `admin` / `admin`) |
-| Postgres (host) | `localhost:5435` — db `meusservicos`, user/pass `postgres` / `clientes` |
+| Grafana | http://localhost:3000 (user/pass do `.env`) |
+| Postgres (host) | `localhost:5435` — credenciais do `.env` |
 
 No Grafana: datasource **Prometheus** já provisionado; dashboard **Clientes API — JVM** na pasta *Clientes Mais*.
 

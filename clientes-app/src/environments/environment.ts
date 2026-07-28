@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   apiURLBase: 'http://localhost:8080',
-  clientId: 'my-angular-app',
-  clientSecret: '@321',
+  /** Site key pública do reCAPTCHA — preencha localmente; não versionar chave real se for restrita */
+  recaptchaSiteKey: '',
   obterTokenUrl: '/api/auth/signin'
 };
 

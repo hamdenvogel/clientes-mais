@@ -18,6 +18,7 @@ import { Prestador } from 'src/app/prestador/prestador';
 import NaturezaService from 'src/app/natureza.service';
 import { Constants } from 'src/app/shared/constants';
 import { Alert } from 'src/app/alert';
+import { environment } from 'src/environments/environment';
 defineLocale('pt-br', ptBrLocale);
 
 @Component({
@@ -42,6 +43,7 @@ export class ServicoPrestadoFormComponent implements OnInit {
   pacote: string;
   TimeOut = Constants.TIMEOUT;
   listAlerts: Alert[] = [];
+  recaptchaSiteKey = environment.recaptchaSiteKey;
 
   constructor(
     private clienteService: ClientesService,
