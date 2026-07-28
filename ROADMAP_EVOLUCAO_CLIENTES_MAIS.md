@@ -293,3 +293,4 @@ Item 3 (CI + GHCR) entregue no repo. Iniciar o **item 4**: K3d no Windows.
 | 2026-07-28 | Monorepo publicado em [hamdenvogel/clientes-mais](https://github.com/hamdenvogel/clientes-mais) (`clientes-api` + `clientes-app`) |
 | 2026-07-28 | Status do roadmap passou a usar checkboxes `[x]` / `[ ]` |
 | 2026-07-28 | **Item 3:** workflows CI + publish GHCR multi-arch (`amd64`/`arm64`) |
+| 2026-07-28 | Remoção de secrets do código versionado; `.gitignore`/README/CONTRIBUTING/SECURITY reforçados |
